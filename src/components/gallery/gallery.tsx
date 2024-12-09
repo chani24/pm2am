@@ -1,8 +1,71 @@
+import "./gallery.css";
+import Image from "next/image";
+
 const gallery = [
   {
-    image: "",
-    span: 3,
-    eventImage: "",
+    image: "payment",
+    span: "2",
+    eventImage: "carnival",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
+    buttonText: "BUY TICKETS",
+  },
+  {
+    image: "smiles",
+    span: "1",
+    eventImage: "halloween",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
+    buttonText: "BUY TICKETS",
+  },
+  {
+    image: "gathering",
+    span: "3",
+    eventImage: "carnival",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
+    buttonText: "BUY TICKETS",
+  },
+  {
+    image: "partying",
+    span: "2",
+    eventImage: "halloween",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
+    buttonText: "BUY TICKETS",
+  },
+  {
+    image: "girls",
+    span: "1",
+    eventImage: "carnival",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
+    buttonText: "BUY TICKETS",
+  },
+  {
+    image: "girls",
+    span: "1",
+    eventImage: "halloween",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
+    buttonText: "BUY TICKETS",
+  },
+  {
+    image: "gathering",
+    span: "2",
+    eventImage: "carnival",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink:
@@ -13,9 +76,45 @@ const gallery = [
 
 export default function Gallery() {
   return (
-    <div className="grid">
+    <div className="grid grid-cols-3 gap-[24px]">
       {gallery.map((item, index) => {
-        return <div key={index}></div>;
+        return (
+          <div
+            className={`gallery_container relative col-span-3 h-[500px]`}
+            key={index}
+            style={{
+              gridColumn: `span ${item.span} / span ${item.span}`,
+            }}
+          >
+            <div
+              className="event_background bg-cover w-full h-full"
+              style={{
+                backgroundImage: `url(/${item.image}.png)`,
+              }}
+            ></div>
+            <div className="event_info">
+              <div>
+                <Image
+                  width={184}
+                  height={228}
+                  alt="party"
+                  src={`/${item.eventImage}.png`}
+                />
+                <div className="flex justify-between">
+                  <span className="light">VENUE</span>
+                  <span>{item.venue}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="light">LOCATION</span>
+                  <span>{item.location}</span>
+                </div>
+                <a target="_blank" href={item.buttonLink}>
+                  <button>{item.buttonText}</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        );
       })}
     </div>
   );

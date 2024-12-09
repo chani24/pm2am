@@ -1,0 +1,46 @@
+.event_info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  > div {
+    height: 356px;
+    width: 216px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    .light {
+      color: #7f7a7a;
+    }
+    button {
+      text-align: center;
+      width: 100%;
+      border-radius: 2px;
+      color: #fff;
+      background-color: black;
+      height: 32px;
+      font-size: 13px;
+      font-size: 600;
+    }
+  }
+}
+.gallery_container:hover {
+  .event_background {
+    filter: grayscale(100%);
+  }
+
+  .event_info {
+    display: flex;
+  }
+}
