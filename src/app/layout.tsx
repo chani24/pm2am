@@ -3,13 +3,13 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Inter, Praise } from "next/font/google";
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
 
-export const praise = Praise({
+const praise = Praise({
   subsets: ["latin"],
   variable: "--font-praise",
   display: "swap",

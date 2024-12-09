@@ -1,5 +1,6 @@
 "use client";
 
+import Gallery from "@/components/gallery/gallery";
 import Nav from "@/components/nav/nav";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -62,6 +63,22 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+      <section className="event_section">
+        <div>
+          <div>NEXT UP</div>
+          <div>
+            <a
+              href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
+              target="_blank"
+            >
+              THE BEACH CARNIVAL ↵
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="gallery_section">
+        <Gallery />
       </section>
     </div>
   );
