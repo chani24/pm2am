@@ -59,13 +59,19 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero_nav {
+    .pc_links {
+      padding: 0;
+      gap: 60px;
+    }
+  }
+}
 @media (min-width: 768px) {
   .hero_nav {
     align-items: flex-start;
     .pc_links {
       display: flex;
-      padding: 0;
-      gap: 60px;
     }
   }
 
