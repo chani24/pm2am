@@ -11,7 +11,6 @@ const Gallery = dynamic(() => import("@/components/gallery/gallery"), {
   ssr: false, // Disable SSR for this component
 });
 
-
 export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
@@ -30,21 +29,25 @@ export default function Home() {
       },
       x: "-500px",
     });
-    requestAnimationFrame(animate);
+
+    const updateAnimation = () => {
+      if (xPercent < -100) {
+        xPercent = 0;
+      } else if (xPercent > 0) {
+        xPercent = -100;
+      }
+      gsap.set(firstText.current, { xPercent: xPercent });
+      gsap.set(secondText.current, { xPercent: xPercent });
+
+      xPercent += 0.035 * -2.5;
+    };
+
+    gsap.ticker.add(updateAnimation);
+
+    return () => {
+      gsap.ticker.remove(updateAnimation);
+    };
   }, []);
-  const animate = () => {
-    if (xPercent < -100) {
-      xPercent = 0;
-    } else if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
-
-    xPercent += 0.035 * -1;
-
-    requestAnimationFrame(animate);
-  };
   return (
     <div>
       <section className="hero_section monument">
@@ -60,11 +63,11 @@ export default function Home() {
         >
           <div ref={slider} className="marquee">
             <p ref={firstText}>
-              Beach Carnival - December 21st, 6PM at Voda Beach Club!
+              Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
             </p>
-            
+
             <p ref={secondText}>
-              Beach Carnival - December 21st, 6PM at Voda Beach Club!
+              Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
             </p>
           </div>
         </div>
