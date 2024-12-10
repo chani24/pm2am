@@ -44,7 +44,39 @@ export default function Nav() {
           />
         </Link>
         <div>
-          <div className="pc_links"></div>
+          <div className="pc_links inter">
+            <div>
+              <p className="mb-2 font-bold">EVENTS</p>
+              <div className="font-semibold">
+                <div className="flex gap-2 items-center justify-center">
+                  {" "}
+                  <a
+                    href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
+                    target="_blank"
+                  >
+                    THE BEACH CARNIVAL
+                  </a>
+                  <div className="new">NEW</div>
+                </div>
+                <p>HALLOWEEN SPECIAL</p>
+              </div>
+            </div>
+            <div>
+              <p className="mb-2 font-bold">CONTACT US</p>
+              <div className="font-semibold">
+                <div>
+                  <p>PM2AM GANG</p>
+                  <a
+                    className="underline"
+                    href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
+                    target="_blank"
+                  >
+                    GET IN TOUCH
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className={"mobile_links"}>
             <button onClick={() => setDropdown(!dropDown)}>MENU</button>
           </div>

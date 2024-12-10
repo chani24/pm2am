@@ -1,8 +1,10 @@
 .event_info {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
+  display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -10,6 +12,7 @@
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   > div {
     height: 356px;
     width: 216px;
@@ -41,6 +44,7 @@
   }
 
   .event_info {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
   }
 }

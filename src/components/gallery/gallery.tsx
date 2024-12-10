@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import "./gallery.css";
 import Image from "next/image";
 
@@ -75,6 +77,14 @@ const gallery = [
 ];
 
 export default function Gallery() {
+  const [isMobile, setIsMobile] = useState(window?.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window?.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="grid grid-cols-3 gap-[24px]">
       {gallery.map((item, index) => {
@@ -83,7 +93,9 @@ export default function Gallery() {
             className={`gallery_container relative col-span-3 h-[500px]`}
             key={index}
             style={{
-              gridColumn: `span ${item.span} / span ${item.span}`,
+              gridColumn: isMobile
+                ? "span 3 / span 3"
+                : `span ${item.span} / span ${item.span}`,
             }}
           >
             <div

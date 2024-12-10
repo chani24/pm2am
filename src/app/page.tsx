@@ -1,10 +1,16 @@
 "use client";
 
-import Gallery from "@/components/gallery/gallery";
+import Footer from "@/components/footer/footer";
 import Nav from "@/components/nav/nav";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
+
+const Gallery = dynamic(() => import("@/components/gallery/gallery"), {
+  ssr: false, // Disable SSR for this component
+});
+
 
 export default function Home() {
   const firstText = useRef(null);
@@ -12,7 +18,6 @@ export default function Home() {
   const [isPaused, setIsPaused] = useState(false);
   const slider = useRef(null);
   let xPercent = 0;
-  let direction = -1;
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -22,7 +27,6 @@ export default function Home() {
         scrub: 0.25,
         start: 0,
         end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
       },
       x: "-500px",
     });
@@ -37,7 +41,7 @@ export default function Home() {
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
 
-    xPercent += 0.035 * direction;
+    xPercent += 0.035 * -1;
 
     requestAnimationFrame(animate);
   };
@@ -45,7 +49,7 @@ export default function Home() {
     <div>
       <section className="hero_section monument">
         <Nav />
-        <div className="hero_text flex justify-center items-center sm:gap-3 gap-5 flex-col sm:flex-row text-3xl ">
+        <div className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
           <span className="praise">FOR</span>
           <span className="monument_black">THE REAL</span>
           <span className="monument_light">PARTIERS</span>
@@ -56,10 +60,11 @@ export default function Home() {
         >
           <div ref={slider} className="marquee">
             <p ref={firstText}>
-              WE&apos;RE CURRENTLY LISTENING TO STARBOY - THE WEEKND
+              Beach Carnival - December 21st, 6PM at Voda Beach Club!
             </p>
+            
             <p ref={secondText}>
-              WE&apos;RE CURRENTLY LISTENING TO STARBOY - THE WEEKND
+              Beach Carnival - December 21st, 6PM at Voda Beach Club!
             </p>
           </div>
         </div>
@@ -80,6 +85,7 @@ export default function Home() {
       <section className="gallery_section">
         <Gallery />
       </section>
+      <Footer />
     </div>
   );
 }
