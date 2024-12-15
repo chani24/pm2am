@@ -30,11 +30,11 @@ const links = [
   },
 ];
 
-export default function Nav() {
+export default function Nav(props: any) {
   const [dropDown, setDropdown] = useState(false);
   return (
     <>
-      <div className="hero_nav">
+      <div className={props.fixed ? "hero_nav fixed_nav" : "hero_nav"}>
         <Link href="/">
           <Image
             src="/logo.svg"
@@ -82,6 +82,7 @@ export default function Nav() {
           </div>
         </div>
       </div>
+
       <div className={dropDown ? "mobile_nav active" : "mobile_nav"}>
         <div className="nav">
           <Link href="/">

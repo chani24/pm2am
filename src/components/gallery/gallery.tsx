@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "payment",
+    image: "girls.webp",
     span: "2",
-    eventImage: "carnival",
+    eventImage: "carnival.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink:
@@ -15,49 +15,45 @@ const gallery = [
     buttonText: "BUY TICKETS",
   },
   {
-    image: "smiles",
+    image: "smiles.png",
     span: "1",
-    eventImage: "halloween",
-    venue: "VODA BEACH CLUB",
+    eventImage: "rooftop.JPG",
+    venue: "ASCENDA ROOFTOP",
     location: "LAGOS",
-    buttonLink:
-      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
-    buttonText: "BUY TICKETS",
+    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonText: "VIEW MORE",
   },
   {
-    image: "gathering",
+    image: "groove.jpeg",
     span: "3",
-    eventImage: "carnival",
-    venue: "VODA BEACH CLUB",
+    eventImage: "halloween.JPG",
+    venue: "SPICE ROUTE, VI",
     location: "LAGOS",
-    buttonLink:
-      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
-    buttonText: "BUY TICKETS",
+    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonText: "VIEW MORE",
   },
   {
-    image: "partying",
+    image: "partying.png",
     span: "2",
-    eventImage: "halloween",
-    venue: "VODA BEACH CLUB",
+    eventImage: "halloween.JPG",
+    venue: "SPICE ROUTE, VI",
     location: "LAGOS",
-    buttonLink:
-      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
-    buttonText: "BUY TICKETS",
+    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonText: "VIEW MORE",
   },
   {
-    image: "girls",
+    image: "silent-girl.jpg",
     span: "1",
-    eventImage: "carnival",
-    venue: "VODA BEACH CLUB",
+    eventImage: "disco.JPG",
+    venue: "THE LONG BAR, VI",
     location: "LAGOS",
-    buttonLink:
-      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
-    buttonText: "BUY TICKETS",
+    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonText: "VIEW MORE",
   },
   {
-    image: "girls",
+    image: "girls.png",
     span: "1",
-    eventImage: "halloween",
+    eventImage: "carnival.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink:
@@ -65,14 +61,13 @@ const gallery = [
     buttonText: "BUY TICKETS",
   },
   {
-    image: "gathering",
+    image: "silent-disco.png",
     span: "2",
-    eventImage: "carnival",
-    venue: "VODA BEACH CLUB",
+    eventImage: "disco.JPG",
+    venue: "THE LONG BAR, VI",
     location: "LAGOS",
-    buttonLink:
-      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
-    buttonText: "BUY TICKETS",
+    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonText: "VIEW MORE",
   },
 ];
 
@@ -90,7 +85,7 @@ export default function Gallery() {
       {gallery.map((item, index) => {
         return (
           <div
-            className={`gallery_container relative col-span-3 h-[500px]`}
+            className={`gallery_container relative col-span-3 h-[500px] overflow-hidden`}
             key={index}
             style={{
               gridColumn: isMobile
@@ -101,7 +96,7 @@ export default function Gallery() {
             <div
               className="event_background bg-cover w-full h-full"
               style={{
-                backgroundImage: `url(/${item.image}.png)`,
+                backgroundImage: `url(/${item.image})`,
               }}
             ></div>
             <div className="event_info">
@@ -110,7 +105,7 @@ export default function Gallery() {
                   width={184}
                   height={228}
                   alt="party"
-                  src={`/${item.eventImage}.png`}
+                  src={`/${item.eventImage}`}
                 />
                 <div className="flex justify-between">
                   <span className="light">VENUE</span>

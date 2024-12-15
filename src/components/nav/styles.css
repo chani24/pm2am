@@ -1,5 +1,15 @@
 .hero_nav {
+  color: white;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   display: flex;
+  &.fixed_nav {
+    display: none;
+    position: fixed;
+  }
   align-items: center;
   justify-content: space-between;
   padding: 24px 16px 0 16px;
@@ -20,6 +30,7 @@
   }
 }
 .mobile_nav {
+  color: white;
   display: flex;
   opacity: 0;
   visibility: hidden;
@@ -27,7 +38,7 @@
   justify-content: space-between;
   background-color: black;
   padding: 24px 16px 20px 16px;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -61,6 +72,10 @@
 
 @media (max-width: 768px) {
   .hero_nav {
+    display: none;
+    &.fixed_nav {
+      display: flex;
+    }
     .pc_links {
       padding: 0;
       gap: 60px;
@@ -85,7 +100,6 @@
     padding-top: 44px;
   }
 }
-
 @media (min-width: 1280px) {
   .hero_nav {
     padding-left: 120px;

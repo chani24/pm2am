@@ -34,9 +34,33 @@ const monumentLight = localFont({
   weight: "100",
 });
 
+
 export const metadata: Metadata = {
   title: "PM2AM",
   description: "FOR THE REAL PARTIERS",
+  openGraph: {
+    title: "PM2AM",
+    description: "FOR THE REAL PARTIERS",
+    url: "https://pm2amgang.com",
+    siteName: "PM2AM",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 679,
+        alt: "PM2AM - For the Real Partiers",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PM2AM",
+    description: "FOR THE REAL PARTIERS",
+    images: ["/og-image.jpg"],
+    creator: "@pm2am_",
+  },
 };
 
 export default function RootLayout({

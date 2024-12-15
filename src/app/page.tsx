@@ -47,48 +47,57 @@ export default function Home() {
     return () => {
       gsap.ticker.remove(updateAnimation);
     };
-  }, []);
+  }, [isPaused]);
   return (
-    <div>
-      <section className="hero_section monument">
-        <Nav />
-        <div className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
-          <span className="praise">FOR</span>
-          <span className="monument_black">THE REAL</span>
-          <span className="monument_light">PARTIERS</span>
-        </div>
-        <div
-          className={isPaused ? "hero_music paused" : "hero_music"}
-          onClick={() => setIsPaused(!isPaused)}
-        >
-          <div ref={slider} className="marquee">
-            <p ref={firstText}>
-              Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
-            </p>
-
-            <p ref={secondText}>
-              Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="event_section">
-        <div>
-          <div>NEXT UP</div>
+    <>
+      <div>
+        <Nav  fixed/>
+      </div>
+      <div>
+        <section className="hero_section monument">
           <div>
-            <a
-              href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
-              target="_blank"
+            <div>
+              <Nav/>
+            </div>
+            <div className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
+              <span className="praise">FOR</span>
+              <span className="monument_black">THE REAL</span>
+              <span className="monument_light">PARTIERS</span>
+            </div>
+            <div
+              className={isPaused ? "hero_music paused" : "hero_music"}
+              onClick={() => setIsPaused(!isPaused)}
             >
-              THE BEACH CARNIVAL ↵
-            </a>
+              <div ref={slider} className="marquee">
+                <p ref={firstText}>
+                  Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
+                </p>
+
+                <p ref={secondText}>
+                  Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="gallery_section">
-        <Gallery />
-      </section>
-      <Footer />
-    </div>
+        </section>
+        <section className="event_section">
+          <div>
+            <div>NEXT UP</div>
+            <div>
+              <a
+                href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
+                target="_blank"
+              >
+                THE BEACH CARNIVAL ↵
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="gallery_section">
+          <Gallery />
+        </section>
+        <Footer />
+      </div>{" "}
+    </>
   );
 }
