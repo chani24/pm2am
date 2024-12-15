@@ -34,7 +34,6 @@ const monumentLight = localFont({
   weight: "100",
 });
 
-
 export const metadata: Metadata = {
   title: "PM2AM",
   description: "FOR THE REAL PARTIERS",
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "PM2AM",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://pm2amgang.com/og-image.jpg",
         width: 1200,
         height: 679,
         alt: "PM2AM - For the Real Partiers",
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PM2AM",
     description: "FOR THE REAL PARTIERS",
-    images: ["/og-image.jpg"],
+    images: ["https://pm2amgang.com/og-image.jpg"],
     creator: "@pm2am_",
   },
 };
