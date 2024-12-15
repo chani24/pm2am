@@ -30,7 +30,7 @@ const links = [
   },
 ];
 
-export default function Nav(props: any) {
+export default function Nav(props: { fixed?: boolean }) {
   const [dropDown, setDropdown] = useState(false);
   return (
     <>
