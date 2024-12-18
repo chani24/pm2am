@@ -7,8 +7,8 @@ const gallery = [
   {
     image: "girls.webp",
     span: "2",
-    eventImage: "carnival.png",
-    venue: "VODA BEACH CLUB",
+    eventImage: "hook-lounge.png",
+    venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink:
       "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
@@ -17,8 +17,8 @@ const gallery = [
   {
     image: "smiles.png",
     span: "1",
-    eventImage: "rooftop.JPG",
-    venue: "ASCENDA ROOFTOP",
+    eventImage: "hook-lounge.png",
+    venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
     buttonText: "VIEW MORE",
@@ -53,8 +53,8 @@ const gallery = [
   {
     image: "girls.png",
     span: "1",
-    eventImage: "carnival.png",
-    venue: "VODA BEACH CLUB",
+    eventImage: "hook-lounge.png",
+    venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink:
       "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
