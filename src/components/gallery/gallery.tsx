@@ -7,7 +7,7 @@ const gallery = [
   {
     image: "girls.webp",
     span: "2",
-    eventImage: "hook-lounge.png",
+    eventImage: "hook-lounge.jpeg",
     venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink:
@@ -17,7 +17,7 @@ const gallery = [
   {
     image: "smiles.png",
     span: "1",
-    eventImage: "hook-lounge.png",
+    eventImage: "hook-lounge.jpeg",
     venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
@@ -53,7 +53,7 @@ const gallery = [
   {
     image: "girls.png",
     span: "1",
-    eventImage: "hook-lounge.png",
+    eventImage: "hook-lounge.jpeg",
     venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink:
