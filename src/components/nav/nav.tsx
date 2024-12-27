@@ -51,7 +51,7 @@ export default function Nav(props: { fixed?: boolean }) {
                 <div className="flex gap-2 items-center justify-center">
                   {" "}
                   <a
-                    href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
+                    href="https://www.instagram.com/p/DDICA-Lo-dX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                     target="_blank"
                   >
                     THE BEACH CARNIVAL
@@ -68,8 +68,8 @@ export default function Nav(props: { fixed?: boolean }) {
                   <p>PM2AM GANG</p>
                   <a
                     className="underline"
-                    href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
                     target="_blank"
+                    href="mailto:pm2amgang@gmail.com"
                   >
                     GET IN TOUCH
                   </a>
@@ -106,7 +106,7 @@ export default function Nav(props: { fixed?: boolean }) {
             <div className="flex gap-2 items-center justify-center">
               {" "}
               <a
-                href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
+                href="https://www.instagram.com/p/DDICA-Lo-dX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                 target="_blank"
               >
                 THE BEACH CARNIVAL

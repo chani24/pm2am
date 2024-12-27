@@ -51,13 +51,13 @@ export default function Home() {
   return (
     <>
       <div>
-        <Nav  fixed/>
+        <Nav fixed />
       </div>
       <div>
         <section className="hero_section monument">
           <div>
             <div>
-              <Nav/>
+              <Nav />
             </div>
             <div className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
               <span className="praise">FOR</span>
@@ -70,11 +70,11 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
+                  Beach Carnival 🏖️ - Thank you for partying with us at Voda📍
                 </p>
 
                 <p ref={secondText}>
-                  Beach Carnival 🏖️ - December 21st, 6PM at Voda Beach Club📍
+                  Beach Carnival 🏖️ - Thank you for partying with us at Voda📍
                 </p>
               </div>
             </div>
@@ -82,10 +82,10 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <div>NEXT UP</div>
+            <div>RECENTLY</div>
             <div>
               <a
-                href="https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5"
+                href="https://www.instagram.com/p/DDICA-Lo-dX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                 target="_blank"
               >
                 THE BEACH CARNIVAL ↵

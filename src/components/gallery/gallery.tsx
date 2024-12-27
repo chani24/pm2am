@@ -5,31 +5,103 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "girls.webp",
+    image: "beach-rave.jpeg",
+    span: "2",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "blow-kiss.jpg",
+    span: "1",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "walking.jpg",
+    span: "1",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "girls-2.jpeg",
+    span: "1",
+    eventImage: "hook-lounge.jpeg",
+    venue: "THE HOOK LOUNGE",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/C-pNNF5IsfR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "women-dancing.jpg",
+    span: "1",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "police.jpg",
+    span: "1",
+    eventImage: "halloween.JPG",
+    venue: "SPICE ROUTE, VI",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DB_3JS6oPLc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "grooving.jpeg",
+    span: "2",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "groove.jpg",
     span: "2",
     eventImage: "hook-lounge.jpeg",
     venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink:
-      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
-    buttonText: "BUY TICKETS",
+      "https://www.instagram.com/p/C-pk7_1oiu0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
   },
   {
-    image: "smiles.png",
+    image: "girl-in-bikini.jpg",
     span: "1",
     eventImage: "hook-lounge.jpeg",
     venue: "THE HOOK LOUNGE",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonLink:
+      "https://www.instagram.com/p/C-pk7_1oiu0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
   {
-    image: "groove.jpeg",
-    span: "3",
-    eventImage: "halloween.JPG",
-    venue: "SPICE ROUTE, VI",
+    image: "silent-girl.jpg",
+    span: "1",
+    eventImage: "disco.jpg",
+    venue: "THE LONG BAR, VI",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonLink:
+      "https://www.instagram.com/p/DBJBbvSIajQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
   {
@@ -38,35 +110,28 @@ const gallery = [
     eventImage: "halloween.JPG",
     venue: "SPICE ROUTE, VI",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonLink:
+      "https://www.instagram.com/p/DB_3JS6oPLc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
   {
-    image: "silent-girl.jpg",
-    span: "1",
-    eventImage: "disco.JPG",
+    image: "silent-disco.png",
+    span: "2",
+    eventImage: "disco.jpg",
     venue: "THE LONG BAR, VI",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    buttonLink:
+      "https://www.instagram.com/p/DBJBbvSIajQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
   {
-    image: "girls.png",
+    image: "girls-1.jpeg",
     span: "1",
     eventImage: "hook-lounge.jpeg",
     venue: "THE HOOK LOUNGE",
     location: "LAGOS",
     buttonLink:
-      "https://tix.africa/discover/palmwine2am-with-the-outsiders-the-beach-carnival-5bd70329-6602-4940-8263-19b2b1d859b5",
-    buttonText: "BUY TICKETS",
-  },
-  {
-    image: "silent-disco.png",
-    span: "2",
-    eventImage: "disco.JPG",
-    venue: "THE LONG BAR, VI",
-    location: "LAGOS",
-    buttonLink: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+      "https://www.instagram.com/p/C-pNNF5IsfR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
 ];
