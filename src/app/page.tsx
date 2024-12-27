@@ -50,15 +50,15 @@ export default function Home() {
   }, [isPaused]);
   return (
     <>
-      <div>
+      <nav>
         <Nav fixed />
-      </div>
+      </nav>
       <div>
         <section className="hero_section monument">
           <div>
-            <div>
+            <nav>
               <Nav />
-            </div>
+            </nav>
             <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
               <span className="praise">FOR</span>
               <span className="monument_black">THE REAL</span>
@@ -96,7 +96,9 @@ export default function Home() {
         <section className="gallery_section">
           <Gallery />
         </section>
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </div>{" "}
     </>
   );

@@ -35,8 +35,9 @@ const monumentLight = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "PM2AM",
-  description: "FOR THE REAL PARTIERS",
+  title: "PM2AM - FOR THE REAL PARTIERS",
+  description:
+    "Explore unforgettable party adventures with PM2AM. From beach carnivals to Halloween specials, we bring you the ultimate Lagos nightlife experience. Get in touch at PM2AMGANG@gmail.com or visit https://pm2amgang.com.",
   keywords: [
     "PM2AM",
     "PM2AM gang",
@@ -58,8 +59,9 @@ export const metadata: Metadata = {
     "Lagos Nightclubs",
   ],
   openGraph: {
-    title: "PM2AM",
-    description: "FOR THE REAL PARTIERS",
+    title: "PM2AM - FOR THE REAL PARTIERS",
+    description:
+      "Explore unforgettable party adventures with PM2AM. From beach carnivals to Halloween specials, we bring you the ultimate Lagos nightlife experience. Get in touch at PM2AMGANG@gmail.com or visit https://pm2amgang.com.",
     url: "https://pm2amgang.com",
     siteName: "PM2AM",
     images: [
