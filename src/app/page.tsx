@@ -59,11 +59,11 @@ export default function Home() {
             <div>
               <Nav />
             </div>
-            <div className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
+            <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
               <span className="praise">FOR</span>
               <span className="monument_black">THE REAL</span>
               <span className="monument_light">PARTIERS</span>
-            </div>
+            </h1>
             <div
               className={isPaused ? "hero_music paused" : "hero_music"}
               onClick={() => setIsPaused(!isPaused)}
@@ -82,15 +82,15 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <div>RECENTLY</div>
-            <div>
+            <h2>RECENTLY</h2>
+            <h2>
               <a
                 href="https://www.instagram.com/p/DDICA-Lo-dX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                 target="_blank"
               >
                 THE BEACH CARNIVAL ↵
               </a>
-            </div>
+            </h2>
           </div>
         </section>
         <section className="gallery_section">
