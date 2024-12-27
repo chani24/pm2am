@@ -97,7 +97,7 @@ const gallery = [
   {
     image: "silent-girl.jpg",
     span: "1",
-    eventImage: "disco.jpg",
+    eventImage: "disco.JPG",
     venue: "THE LONG BAR, VI",
     location: "LAGOS",
     buttonLink:
@@ -117,7 +117,7 @@ const gallery = [
   {
     image: "silent-disco.png",
     span: "2",
-    eventImage: "disco.jpg",
+    eventImage: "disco.JPG",
     venue: "THE LONG BAR, VI",
     location: "LAGOS",
     buttonLink:
