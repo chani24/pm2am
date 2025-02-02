@@ -70,11 +70,13 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  Beach Carnival 🏖️ - Thank you for partying with us at Voda📍
+                  PM2AM presents: Raves and Roses ❤️‍🔥🌹 - 22nd Feb, 2025 - Spice
+                  Route, VI 📍
                 </p>
 
                 <p ref={secondText}>
-                  Beach Carnival 🏖️ - Thank you for partying with us at Voda📍
+                  PM2AM presents: Raves and Roses ❤️‍🔥🌹 - 22nd Feb, 2025 - Spice
+                  Route, VI 📍
                 </p>
               </div>
             </div>
@@ -82,13 +84,10 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2>RECENTLY</h2>
+            <h2>NEXT UP</h2>
             <h2>
-              <a
-                href="https://www.instagram.com/p/DDICA-Lo-dX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank"
-              >
-                THE BEACH CARNIVAL ↵
+              <a href="https://tix.africa/pm2am-raves-roses" target="_blank">
+                RAVES AND ROSES ↵
               </a>
             </h2>
           </div>

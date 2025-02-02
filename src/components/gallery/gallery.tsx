@@ -5,6 +5,16 @@ import Image from "next/image";
 
 const gallery = [
   {
+    image: "raves-and-roses.jpeg",
+    span: "1",
+    eventImage: "raves-and-roses.jpeg",
+    venue: "SPICE ROUTE, VI",
+    location: "LAGOS",
+    buttonLink: "https://tix.africa/pm2am-raves-roses",
+    buttonText: "GET TICKETS",
+  },
+
+  {
     image: "beach-rave.jpeg",
     span: "2",
     eventImage: "carnival.png",
@@ -14,16 +24,16 @@ const gallery = [
       "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
-  {
-    image: "blow-kiss.jpg",
-    span: "1",
-    eventImage: "carnival.png",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink:
-      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    buttonText: "VIEW MORE",
-  },
+  // {
+  //   image: "blow-kiss.jpg",
+  //   span: "1",
+  //   eventImage: "carnival.png",
+  //   venue: "VODA BEACH CLUB",
+  //   location: "LAGOS",
+  //   buttonLink:
+  //     "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  //   buttonText: "VIEW MORE",
+  // },
   {
     image: "walking.jpg",
     span: "1",

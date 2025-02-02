@@ -51,13 +51,14 @@ export default function Nav(props: { fixed?: boolean }) {
                 <div className="flex gap-2 items-center justify-center">
                   {" "}
                   <a
-                    href="https://www.instagram.com/p/DDICA-Lo-dX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                    href="https://tix.africa/pm2am-raves-roses"
                     target="_blank"
                   >
-                    THE BEACH CARNIVAL
+                    RAVES AND ROSES
                   </a>
                   <div className="new">NEW</div>
                 </div>
+                <p>THE BEACH CARNIVAL</p>
                 <p>HALLOWEEN SPECIAL</p>
               </div>
             </div>
@@ -105,14 +106,12 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="font-sm font-semibold">
             <div className="flex gap-2 items-center justify-center">
               {" "}
-              <a
-                href="https://www.instagram.com/p/DDICA-Lo-dX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank"
-              >
-                THE BEACH CARNIVAL
+              <a href="https://tix.africa/pm2am-raves-roses" target="_blank">
+                RAVES AND ROSES
               </a>
               <div className="new">NEW</div>
             </div>
+            <p className="text-[#C2C2C2]">THE BEACH CARNIVAL</p>
             <p className="text-[#C2C2C2]">HALLOWEEN SPECIAL</p>
           </div>
         </div>
