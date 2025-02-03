@@ -3,6 +3,7 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import "./styles.css";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useState } from "react";
 gsap.registerPlugin(ScrollToPlugin);
 const links = [
   {
@@ -33,15 +34,37 @@ const links = [
 ];
 
 export default function Footer() {
-  const goBackTop = () => {
-    const heroDiv = document.querySelector(".hero_section");
-    if (heroDiv && window) {
-      gsap.to(window, {
-        duration: 1,
-        scrollTo: heroDiv,
-        ease: "power2.inOut",
-      }); 
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [butttonText, setButtonText] = useState("SUBSCRIBE");
+
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    setButtonText("SUBSCRIBING...");
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ firstName, email }),
+      });
+
+      if (response.ok) {
+        setButtonText("SUBSCRIBED!");
+        setEmail("");
+        setFirstName("");
+      } else {
+        setButtonText("TRY AGAIN :(");
+      }
+    } catch (error) {
+      setButtonText("TRY LATER :(");
     }
+
+    setTimeout(() => {
+      setButtonText("SUBSCRIBE");
+    }, 3000);
   };
 
   return (
@@ -57,10 +80,37 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className="text-center  underline sm:hidden">
-          <p className="text-2xl font-black pt-[40px]" onClick={goBackTop}>
-            BACK TO TOP
-          </p>
+        <div className="newsletter">
+          <p>SUBSCRIBE TO THE GANG</p>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="FIRST NAME"
+              className="input"
+              required
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="EMAIL ADDRESS"
+              className="input"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button
+              disabled={butttonText !== "SUBSCRIBE"}
+              style={{
+                cursor: butttonText !== "SUBSCRIBE" ? "not-allowed" : "pointer",
+                color: butttonText !== "SUBSCRIBE" ? "#d3d3d3" : "white",
+              }}
+              className="btn primary"
+              type="submit"
+            >
+              {butttonText}
+            </button>
+          </form>
         </div>
         <div className="nav_footer">
           <a target="_blank" href="mailto:pm2amgang@gmail.com">
