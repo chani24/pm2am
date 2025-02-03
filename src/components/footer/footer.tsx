@@ -18,7 +18,7 @@ const links = [
     width: 26.56,
     height: 24,
   },
-  { name: "spotify", link: "", width: 24, height: 24 },
+  { name: "spotify", link: "/", width: 24, height: 24 },
   {
     name: "whatsapp",
     link: "https://chat.whatsapp.com/D4Uww3fQ5hXK1yhQ383Szt",
