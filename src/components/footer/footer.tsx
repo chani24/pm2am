@@ -37,6 +37,7 @@ export default function Footer() {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [butttonText, setButtonText] = useState("SUBSCRIBE");
+  const isDisabled = butttonText !== "SUBSCRIBE" || !email || !firstName;
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -100,10 +101,10 @@ export default function Footer() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <button
-              disabled={butttonText !== "SUBSCRIBE"}
+              disabled={isDisabled}
               style={{
-                cursor: butttonText !== "SUBSCRIBE" ? "not-allowed" : "pointer",
-                color: butttonText !== "SUBSCRIBE" ? "#d3d3d3" : "white",
+                cursor: isDisabled ? "not-allowed" : "pointer",
+                color: isDisabled ? "#d3d3d3" : "white",
               }}
               className="btn primary"
               type="submit"
