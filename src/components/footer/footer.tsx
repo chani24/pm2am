@@ -81,7 +81,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="newsletter">
-          <p>SUBSCRIBE TO THE GANG</p>
+          <p>JOIN THE GANG</p>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
