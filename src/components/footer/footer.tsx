@@ -59,7 +59,7 @@ export default function Footer() {
         setButtonText("TRY AGAIN :(");
       }
     } catch (error) {
-      setButtonText("TRY LATER :(");
+      if (error) setButtonText("TRY LATER :(");
     }
 
     setTimeout(() => {
