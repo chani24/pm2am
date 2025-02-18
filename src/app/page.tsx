@@ -59,11 +59,24 @@ export default function Home() {
             <nav>
               <Nav />
             </nav>
-            <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
+            {/* <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
               <span className="praise">FOR</span>
               <span className="monument_black">THE REAL</span>
               <span className="monument_light">PARTIERS</span>
-            </h1>
+            </h1> */}
+            <div className="btn_container">
+              <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
+                <span className="praise">RAVES</span>
+                <span className="monument">&</span>
+                <span className="praise">ROSES ❤️‍🔥🌹</span>
+              </h1>
+              <a href="https://tix.africa/pm2am-raves-roses" target="_blank">
+                <button className="hero_btn">
+                  <p>GET TICKETS</p>
+                </button>
+              </a>
+            </div>
+
             <div
               className={isPaused ? "hero_music paused" : "hero_music"}
               onClick={() => setIsPaused(!isPaused)}
