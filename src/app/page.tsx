@@ -59,12 +59,12 @@ export default function Home() {
             <nav>
               <Nav />
             </nav>
-            {/* <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
+            <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
               <span className="praise">FOR</span>
               <span className="monument_black">THE REAL</span>
               <span className="monument_light">PARTIERS</span>
-            </h1> */}
-            <div className="btn_container">
+            </h1>
+            {/* <div className="btn_container">
               <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
                 <span className="praise">RAVES</span>
                 <span className="monument">&</span>
@@ -75,7 +75,7 @@ export default function Home() {
                   <p>GET TICKETS</p>
                 </button>
               </a>
-            </div>
+            </div> */}
 
             <div
               className={isPaused ? "hero_music paused" : "hero_music"}
@@ -83,13 +83,11 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM presents: Raves and Roses ❤️‍🔥🌹 - 22nd Feb, 2025 - Spice
-                  Route, VI 📍
+                  Thanks for Coming! - Raves and Roses ❤️‍🔥🌹 - Spice Route, VI 📍
                 </p>
 
                 <p ref={secondText}>
-                  PM2AM presents: Raves and Roses ❤️‍🔥🌹 - 22nd Feb, 2025 - Spice
-                  Route, VI 📍
+                  Thanks for Coming! - Raves and Roses ❤️‍🔥🌹 - Spice Route, VI 📍
                 </p>
               </div>
             </div>
@@ -97,9 +95,12 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2>NEXT UP</h2>
+            <h2>RECENTLY</h2>
             <h2>
-              <a href="https://tix.africa/pm2am-raves-roses" target="_blank">
+              <a
+                href="https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1"
+                target="_blank"
+              >
                 RAVES AND ROSES ↵
               </a>
             </h2>

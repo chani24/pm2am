@@ -5,15 +5,53 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "raves-and-roses.jpeg",
+    image: "heart-sign.jpeg",
+    span: "1",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "two-ravers.jpeg",
     span: "1",
     eventImage: "raves-and-roses.jpeg",
     venue: "SPICE ROUTE, VI",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/pm2am-raves-roses",
-    buttonText: "GET TICKETS",
+    buttonLink: "https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "two-ravers-2.jpeg",
+    span: "1",
+    eventImage: "raves-and-roses.jpeg",
+    venue: "SPICE ROUTE, VI",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
   },
 
+  {
+    image: "two-partiers.jpeg",
+    span: "1",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "rave-rose-party.jpeg",
+    span: "2",
+    eventImage: "raves-and-roses.jpeg",
+    venue: "SPICE ROUTE, VI",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
+  },
   {
     image: "beach-rave.jpeg",
     span: "2",
@@ -24,16 +62,16 @@ const gallery = [
       "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
-  // {
-  //   image: "blow-kiss.jpg",
-  //   span: "1",
-  //   eventImage: "carnival.png",
-  //   venue: "VODA BEACH CLUB",
-  //   location: "LAGOS",
-  //   buttonLink:
-  //     "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  //   buttonText: "VIEW MORE",
-  // },
+  {
+    image: "blow-kiss.jpg",
+    span: "1",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
   {
     image: "walking.jpg",
     span: "1",
@@ -65,13 +103,13 @@ const gallery = [
     buttonText: "VIEW MORE",
   },
   {
-    image: "police.jpg",
+    image: "dj-naffy.jpeg",
     span: "1",
-    eventImage: "halloween.JPG",
-    venue: "SPICE ROUTE, VI",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink:
-      "https://www.instagram.com/p/DB_3JS6oPLc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
   {
@@ -105,36 +143,6 @@ const gallery = [
     buttonText: "VIEW MORE",
   },
   {
-    image: "silent-girl.jpg",
-    span: "1",
-    eventImage: "disco.JPG",
-    venue: "THE LONG BAR, VI",
-    location: "LAGOS",
-    buttonLink:
-      "https://www.instagram.com/p/DBJBbvSIajQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    buttonText: "VIEW MORE",
-  },
-  {
-    image: "partying.png",
-    span: "2",
-    eventImage: "halloween.JPG",
-    venue: "SPICE ROUTE, VI",
-    location: "LAGOS",
-    buttonLink:
-      "https://www.instagram.com/p/DB_3JS6oPLc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    buttonText: "VIEW MORE",
-  },
-  {
-    image: "silent-disco.png",
-    span: "2",
-    eventImage: "disco.JPG",
-    venue: "THE LONG BAR, VI",
-    location: "LAGOS",
-    buttonLink:
-      "https://www.instagram.com/p/DBJBbvSIajQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    buttonText: "VIEW MORE",
-  },
-  {
     image: "girls-1.jpeg",
     span: "1",
     eventImage: "hook-lounge.jpeg",
@@ -142,6 +150,44 @@ const gallery = [
     location: "LAGOS",
     buttonLink:
       "https://www.instagram.com/p/C-pNNF5IsfR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "rave-at-the-roses.jpeg",
+    span: "2",
+    eventImage: "raves-and-roses.jpeg",
+    venue: "SPICE ROUTE, VI",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "at-the-rave.jpeg",
+    span: "1",
+    eventImage: "raves-and-roses.jpeg",
+    venue: "SPICE ROUTE, VI",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "selfie-at-voda.jpeg",
+    span: "1",
+    eventImage: "carnival.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "silent-girl.jpg",
+    span: "1",
+    eventImage: "disco.JPG",
+    venue: "THE LONG BAR, VI",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DBJBbvSIajQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
 ];
