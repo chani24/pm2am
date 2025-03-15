@@ -37,7 +37,7 @@ export default function Nav(props: { fixed?: boolean }) {
       <div className={props.fixed ? "hero_nav fixed_nav" : "hero_nav"}>
         <Link href="/">
           <Image
-            src="/logo.svg"
+            src="/logo-new.svg"
             alt={"Pm2am Logo"}
             width={131.68}
             height={40}
@@ -88,7 +88,7 @@ export default function Nav(props: { fixed?: boolean }) {
         <div className="nav">
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/logo-new.svg"
               alt={"Pm2am Logo"}
               width={131.68}
               height={40}

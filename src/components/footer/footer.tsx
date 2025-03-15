@@ -71,12 +71,12 @@ export default function Footer() {
     <>
       <div className="footer monument">
         <div className="logo">
-            <Image
-              src="/logo.svg"
-              alt={"Pm2am Logo"}
-              width={1440.68}
-              height={422}
-            />
+          <Image
+            src="/logo-new.svg"
+            alt={"Pm2am Logo"}
+            width={1440.68}
+            height={422}
+          />
         </div>
         <div className="newsletter">
           <p>JOIN THE GANG</p>
