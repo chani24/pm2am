@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 29.6vw;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -9,11 +10,15 @@
 
   .logo {
     position: relative;
-    z-index: 6000;
+    z-index: 4900;
+    margin-bottom: 29.6vw;
     img {
       width: 100%;
       height: auto;
-      margin-top: -0.5px;
+      position: absolute;
+      top: -29.6vw;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -36,7 +41,8 @@
       gap: 20px;
       width: 400px;
       max-width: 100%;
-      input, button{
+      input,
+      button {
         width: 100%;
       }
       input {

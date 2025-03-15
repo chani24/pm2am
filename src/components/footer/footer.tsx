@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { gsap } from "gsap";
 import "./styles.css";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -72,14 +71,12 @@ export default function Footer() {
     <>
       <div className="footer monument">
         <div className="logo">
-          <Link href="/">
             <Image
-              src="/logo-big.svg"
+              src="/logo.svg"
               alt={"Pm2am Logo"}
               width={1440.68}
               height={422}
             />
-          </Link>
         </div>
         <div className="newsletter">
           <p>JOIN THE GANG</p>

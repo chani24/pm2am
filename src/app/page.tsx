@@ -66,11 +66,14 @@ export default function Home() {
             </h1>
             {/* <div className="btn_container">
               <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
-                <span className="praise">RAVES</span>
-                <span className="monument">&</span>
-                <span className="praise">ROSES ❤️‍🔥🌹</span>
+                <span className="praise">ALL</span>
+                <span className="praise">WHITE</span>
+                <span className="praise">AFFAIR</span>
               </h1>
-              <a href="https://tix.africa/pm2am-raves-roses" target="_blank">
+              <a
+                href="https://tix.africa/pm2am-anniversary-all-white-affair"
+                target="_blank"
+              >
                 <button className="hero_btn">
                   <p>GET TICKETS</p>
                 </button>
@@ -83,11 +86,11 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  Thanks for Coming! - Raves and Roses ❤️‍🔥🌹 - Spice Route, VI 📍
+                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - April 5th 2025
                 </p>
 
                 <p ref={secondText}>
-                  Thanks for Coming! - Raves and Roses ❤️‍🔥🌹 - Spice Route, VI 📍
+                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - April 5th 2025
                 </p>
               </div>
             </div>
@@ -95,13 +98,13 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2>RECENTLY</h2>
+            <h2>UP NEXT</h2>
             <h2>
               <a
-                href="https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1"
+                href="https://tix.africa/pm2am-anniversary-all-white-affair"
                 target="_blank"
               >
-                RAVES AND ROSES ↵
+                ALL WHITE AFFAIR ↵
               </a>
             </h2>
           </div>

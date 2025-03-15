@@ -7,11 +7,10 @@ const gallery = [
   {
     image: "heart-sign.jpeg",
     span: "1",
-    eventImage: "carnival.png",
-    venue: "VODA BEACH CLUB",
+    eventImage: "raves-and-roses.jpeg",
+    venue: "SPICE ROUTE, VI",
     location: "LAGOS",
-    buttonLink:
-      "https://www.instagram.com/p/DEDM3Jpo4i5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonLink: "https://www.instagram.com/p/DGkuTj9oOdj/?hl=en&img_index=1",
     buttonText: "VIEW MORE",
   },
   {
