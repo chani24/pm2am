@@ -132,7 +132,7 @@ export default function Footer() {
             })}
           </div>
           <p className="mt-[40px] md:mt-[60px] text-center inter font-semibold">
-            ©2024 PM2AM® ALL RIGHTS RESERVED
+            ©2025 PM2AM® ALL RIGHTS RESERVED
           </p>
         </div>
       </div>

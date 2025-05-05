@@ -51,7 +51,7 @@ export default function Nav(props: { fixed?: boolean }) {
                 <div className="flex gap-2 items-center justify-center">
                   {" "}
                   <a
-                    href="https://tix.africa/pm2am-anniversary-all-white-affair"
+                    href="https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                     target="_blank"
                   >
                     ALL WHITE AFFAIR
@@ -107,7 +107,7 @@ export default function Nav(props: { fixed?: boolean }) {
             <div className="flex gap-2 items-center justify-center">
               {" "}
               <a
-                href="https://tix.africa/pm2am-anniversary-all-white-affair"
+                href="https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                 target="_blank"
               >
                 ALL WHITE AFFAIR
@@ -140,7 +140,7 @@ export default function Nav(props: { fixed?: boolean }) {
             })}
           </div>
           <p className="mt-[40px] text-center inter font-semibold">
-            ©2024 PM2AM® ALL RIGHTS RESERVED
+            ©2025 PM2AM® ALL RIGHTS RESERVED
           </p>
         </div>
       </div>

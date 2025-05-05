@@ -86,11 +86,13 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - April 5th 2025
+                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - THANK YOU FOR PARTYING
+                  WITH US!
                 </p>
 
                 <p ref={secondText}>
-                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - April 5th 2025
+                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - THANK YOU FOR PARTYING
+                  WITH US!
                 </p>
               </div>
             </div>
@@ -98,10 +100,10 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2>UP NEXT</h2>
+            <h2>RECENTLY</h2>
             <h2>
               <a
-                href="https://tix.africa/pm2am-anniversary-all-white-affair"
+                href="https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                 target="_blank"
               >
                 ALL WHITE AFFAIR ↵

@@ -5,6 +5,57 @@ import Image from "next/image";
 
 const gallery = [
   {
+    image: "aw-girl-dancing.jpeg",
+    span: "1",
+    eventImage: "all-white.jpg",
+    venue: "THE CLUBHOUSE",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "aw-man-and-drink.jpeg",
+    span: "1",
+    eventImage: "all-white.jpg",
+    venue: "THE CLUBHOUSE",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "aw-girl-with-cash.jpg",
+    span: "1",
+    eventImage: "all-white.jpg",
+    venue: "THE CLUBHOUSE",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "aw-partiers.png",
+    span: "2",
+    eventImage: "all-white.jpg",
+    venue: "THE CLUBHOUSE",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "aw-two-guys.jpeg",
+    span: "1",
+    eventImage: "all-white.jpg",
+    venue: "THE CLUBHOUSE",
+    location: "LAGOS",
+    buttonLink:
+      "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    buttonText: "VIEW MORE",
+  },
+
+  {
     image: "heart-sign.jpeg",
     span: "1",
     eventImage: "raves-and-roses.jpeg",
