@@ -86,13 +86,13 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - THANK YOU FOR PARTYING
-                  WITH US!
+                  DAY SHIFT: A BEACH PARTY BY PM2AM ☀️🌴 31·06·25 12PM @ VODA
+                  BEACH CLUB 📍
                 </p>
 
                 <p ref={secondText}>
-                  PM2AM ANNIVERSARY: ALL WHITE AFFAIR - THANK YOU FOR PARTYING
-                  WITH US!
+                  DAY SHIFT: A BEACH PARTY BY PM2AM ☀️🌴 31·06·25 12PM @ VODA
+                  BEACH CLUB 📍
                 </p>
               </div>
             </div>
@@ -100,13 +100,10 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2>RECENTLY</h2>
+            <h2>NEXT UP</h2>
             <h2>
-              <a
-                href="https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank"
-              >
-                ALL WHITE AFFAIR ↵
+              <a href="https://tix.africa/pm2amvoda" target="_blank">
+                DAY SHIFT ☀️ ↵
               </a>
             </h2>
           </div>

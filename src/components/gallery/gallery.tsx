@@ -5,6 +5,15 @@ import Image from "next/image";
 
 const gallery = [
   {
+    image: "day-shift.jpeg",
+    span: "1",
+    eventImage: "day-shift.jpeg",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink: "https://tix.africa/pm2amvoda",
+    buttonText: "BUY TICKETS",
+  },
+  {
     image: "aw-girl-dancing.jpeg",
     span: "1",
     eventImage: "all-white.jpg",
@@ -44,16 +53,16 @@ const gallery = [
       "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     buttonText: "VIEW MORE",
   },
-  {
-    image: "aw-two-guys.jpeg",
-    span: "1",
-    eventImage: "all-white.jpg",
-    venue: "THE CLUBHOUSE",
-    location: "LAGOS",
-    buttonLink:
-      "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    buttonText: "VIEW MORE",
-  },
+  // {
+  //   image: "aw-two-guys.jpeg",
+  //   span: "1",
+  //   eventImage: "all-white.jpg",
+  //   venue: "THE CLUBHOUSE",
+  //   location: "LAGOS",
+  //   buttonLink:
+  //     "https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  //   buttonText: "VIEW MORE",
+  // },
 
   {
     image: "heart-sign.jpeg",

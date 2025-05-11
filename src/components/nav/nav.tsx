@@ -48,18 +48,14 @@ export default function Nav(props: { fixed?: boolean }) {
             <div>
               <p className="mb-2 font-bold">EVENTS</p>
               <div className="font-semibold">
-                <div className="flex gap-2 items-center justify-center">
-                  {" "}
-                  <a
-                    href="https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                    target="_blank"
-                  >
-                    ALL WHITE AFFAIR
+                <div className="flex gap-2 items-center">
+                  <a href="https://tix.africa/pm2amvoda" target="_blank">
+                    DAY SHIFT
                   </a>
                   <div className="new">NEW</div>
                 </div>
+                <p>ALL WHITE AFFAIR</p>
                 <p>RAVES AND ROSES</p>
-                <p>THE BEACH CARNIVAL</p>
               </div>
             </div>
             <div>
@@ -105,17 +101,13 @@ export default function Nav(props: { fixed?: boolean }) {
           <p className="mb-5 text-2xl font-black">EVENTS</p>
           <div className="font-sm font-semibold">
             <div className="flex gap-2 items-center justify-center">
-              {" "}
-              <a
-                href="https://www.instagram.com/p/DIcBtpJoL3-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank"
-              >
-                ALL WHITE AFFAIR
+              <a href="https://tix.africa/pm2amvoda" target="_blank">
+                DAY SHIFT
               </a>
               <div className="new">NEW</div>
             </div>
+            <p className="text-[#C2C2C2]">ALL WHITE AFFAIR</p>
             <p className="text-[#C2C2C2]">RAVES AND ROSES</p>
-            <p className="text-[#C2C2C2]">THE BEACH CARNIVAL</p>
           </div>
         </div>
         <div className="nav_footer">
