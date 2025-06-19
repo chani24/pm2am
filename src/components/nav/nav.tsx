@@ -49,13 +49,16 @@ export default function Nav(props: { fixed?: boolean }) {
               <p className="mb-2 font-bold">EVENTS</p>
               <div className="font-semibold">
                 <div className="flex gap-2 items-center">
-                  <a href="https://tix.africa/pm2amvoda" target="_blank">
-                    DAY SHIFT
+                  <a
+                    href="https://tix.africa/discover/mardi2am"
+                    target="_blank"
+                  >
+                    MARDI2AM
                   </a>
                   <div className="new">NEW</div>
                 </div>
+                <p>DAY SHIFT</p>
                 <p>ALL WHITE AFFAIR</p>
-                <p>RAVES AND ROSES</p>
               </div>
             </div>
             <div>
@@ -101,13 +104,13 @@ export default function Nav(props: { fixed?: boolean }) {
           <p className="mb-5 text-2xl font-black">EVENTS</p>
           <div className="font-sm font-semibold">
             <div className="flex gap-2 items-center justify-center">
-              <a href="https://tix.africa/pm2amvoda" target="_blank">
-                DAY SHIFT
+              <a href="https://tix.africa/discover/mardi2am" target="_blank">
+                MARDI2AM
               </a>
               <div className="new">NEW</div>
             </div>
+            <p className="text-[#C2C2C2]">DAY SHIFT</p>
             <p className="text-[#C2C2C2]">ALL WHITE AFFAIR</p>
-            <p className="text-[#C2C2C2]">RAVES AND ROSES</p>
           </div>
         </div>
         <div className="nav_footer">

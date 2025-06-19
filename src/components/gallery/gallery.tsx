@@ -5,14 +5,52 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "day-shift.jpeg",
+    image: "2-girls.jpg",
+    span: "1",
+    eventImage: "mardi2am.jpg",
+    venue: "SPICE ROUTE, VI",
+    location: "LAGOS",
+    buttonLink: "https://tix.africa/discover/mardi2am",
+    buttonText: "BUY TICKETS",
+  },
+  {
+    image: "day-shift-party.jpeg",
+    span: "2",
+    eventImage: "day-shift.jpeg",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DKm4YWXIJyD/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "3-girls.jpeg",
+    span: "2",
+    eventImage: "day-shift.jpeg",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DKm4YWXIJyD/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
+  },
+
+  {
+    image: "guy-smiling.jpg",
     span: "1",
     eventImage: "day-shift.jpeg",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/pm2amvoda",
-    buttonText: "BUY TICKETS",
+    buttonLink: "https://www.instagram.com/p/DKm4YWXIJyD/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
   },
+  {
+    image: "girl-in-brazil.jpg",
+    span: "1",
+    eventImage: "day-shift.jpeg",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DKm4YWXIJyD/?hl=en&img_index=1",
+    buttonText: "VIEW MORE",
+  },
+
   {
     image: "aw-girl-dancing.jpeg",
     span: "1",
