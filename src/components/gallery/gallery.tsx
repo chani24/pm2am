@@ -312,7 +312,7 @@ export default function Gallery() {
             }}
           >
             <div
-              className="event_background bg-cover w-full h-full"
+              className="event_background bg-cover bg-center w-full h-full"
               style={{
                 backgroundImage: `url(/${item.image})`,
               }}
