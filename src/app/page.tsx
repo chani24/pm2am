@@ -86,13 +86,12 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  MARDI2AM 💽 28·06·25 7PM @ SPICE ROUTE, VI 📍. EVERY GENRE
-                  TELLS A STORY 🎶
+                  PM2AM PRESENTS... HOT BODY SUMMER 👙 30·08·25 2PM @ VODA BEACH
+                  CLUB
                 </p>
-
                 <p ref={secondText}>
-                  MARDI2AM 💽 28·06·25 7PM @ SPICE ROUTE, VI 📍. EVERY GENRE
-                  TELLS A STORY 🎶
+                  PM2AM PRESENTS... HOT BODY SUMMER 👙 30·08·25 2PM @ VODA BEACH
+                  CLUB
                 </p>
               </div>
             </div>
@@ -102,8 +101,11 @@ export default function Home() {
           <div>
             <h2>NEXT UP</h2>
             <h2>
-              <a href="https://tix.africa/discover/mardi2am" target="_blank">
-                MARDI2AM 💽 ↵
+              <a
+                href="https://tix.africa/discover/pm2amhotbodysummer"
+                target="_blank"
+              >
+                HOT BODY SUMMER 👙 ↵
               </a>
             </h2>
           </div>

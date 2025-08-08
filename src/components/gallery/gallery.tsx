@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "2-girls.jpg",
+    image: "hotbody.png", //"2-girls.jpg",
     span: "1",
-    eventImage: "mardi2am.jpg",
-    venue: "SPICE ROUTE, VI",
+    eventImage: "hotbody.png",
+    venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/discover/mardi2am",
+    buttonLink: "https://tix.africa/discover/pm2amhotbodysummer",
     buttonText: "BUY TICKETS",
   },
   {
