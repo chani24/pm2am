@@ -50,15 +50,15 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://tix.africa/discover/pm2amhotbodysummer"
+                    href="https://tix.africa/pm2amsocialnights"
                     target="_blank"
                   >
-                    HOT BODY SUMMER
+                    SOCIAL NIGHTS
                   </a>
                   <div className="new">NEW</div>
                 </div>
+                <p>HOT BODY SUMMER</p>
                 <p>MARDI2AM</p>
-                <p>DAY SHIFT</p>
               </div>
             </div>
             <div>
@@ -104,16 +104,13 @@ export default function Nav(props: { fixed?: boolean }) {
           <p className="mb-5 text-2xl font-black">EVENTS</p>
           <div className="font-sm font-semibold">
             <div className="flex gap-2 items-center justify-center">
-              <a
-                href="https://tix.africa/discover/pm2amhotbodysummer"
-                target="_blank"
-              >
-                HOT BODY SUMMER
+              <a href="https://tix.africa/pm2amsocialnights" target="_blank">
+                SOCIAL NIGHTS
               </a>
               <div className="new">NEW</div>
             </div>
+            <p className="text-[#C2C2C2]">HOT BODY SUMMER</p>
             <p className="text-[#C2C2C2]">MARDI2AM</p>
-            <p className="text-[#C2C2C2]">DAY SHIFT</p>
           </div>
         </div>
         <div className="nav_footer">

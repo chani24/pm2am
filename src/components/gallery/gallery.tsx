@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "hotbody.png", //"2-girls.jpg",
+    image: "social-nights.png", //"2-girls.jpg",
     span: "1",
-    eventImage: "hotbody.png",
-    venue: "VODA BEACH CLUB",
+    eventImage: "social-nights.png",
+    venue: "TBA",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/discover/pm2amhotbodysummer",
+    buttonLink: "https://tix.africa/pm2amsocialnights",
     buttonText: "BUY TICKETS",
   },
   {
