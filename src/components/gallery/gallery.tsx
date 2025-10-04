@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "social-nights.png", //"2-girls.jpg",
+    image: "echo.png", //"social-nights.png", //"2-girls.jpg",
     span: "1",
-    eventImage: "social-nights.png",
-    venue: "TBA",
+    eventImage: "echo.png",
+    venue: "THE CLUBHOUSE, VI",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/pm2amsocialnights",
+    buttonLink: "https://tix.africa/pm2ammadhouse",
     buttonText: "BUY TICKETS",
   },
   {

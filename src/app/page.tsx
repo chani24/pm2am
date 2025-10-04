@@ -86,12 +86,12 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  🎈 THE REAL ONES PARTY HERE! PM2AM SOCIAL NIGHT - 27·09·25 5PM
-                  @ TBA 🎶
+                  PM2AM 🎃X👻 MADHOUSE PRESENTS: ECHOES OF EKO 🦇🌕 1ST NOV ·
+                  8PM @ THE CLUBHOUSE VI
                 </p>
                 <p ref={secondText}>
-                  🎈 THE REAL ONES PARTY HERE! PM2AM SOCIAL NIGHT - 27·09·25 5PM
-                  @ TBA 🎶
+                  PM2AM 🎃X👻 MADHOUSE PRESENTS: ECHOES OF EKO 🦇🌕 1ST NOV ·
+                  8PM @ THE CLUBHOUSE VI
                 </p>
               </div>
             </div>
@@ -101,8 +101,8 @@ export default function Home() {
           <div>
             <h2>NEXT UP</h2>
             <h2>
-              <a href="https://tix.africa/pm2amsocialnights" target="_blank">
-                SOCIAL NIGHTS 🎈↵
+              <a href="https://tix.africa/pm2ammadhouse" target="_blank">
+                ECHOES OF EKO 🦇↵
               </a>
             </h2>
           </div>
