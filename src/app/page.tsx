@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
+import ModalForm from "@/components/modalForm/ModalForm";
 
 const Gallery = dynamic(() => import("@/components/gallery/gallery"), {
   ssr: false, // Disable SSR for this component
@@ -15,6 +16,7 @@ export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const slider = useRef(null);
   let xPercent = 0;
 
@@ -60,25 +62,21 @@ export default function Home() {
               <Nav />
             </nav>
             <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
-              <span className="praise">FOR</span>
+              <span className="monument_black">FOR</span>
               <span className="monument_black">THE REAL</span>
-              <span className="monument_light">PARTIERS</span>
+              <span className="monument_black">PARTIERS</span>
             </h1>
-            {/* <div className="btn_container">
-              <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
+            <div className="btn_container">
+              {/* <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
                 <span className="praise">ALL</span>
                 <span className="praise">WHITE</span>
                 <span className="praise">AFFAIR</span>
-              </h1>
-              <a
-                href="https://tix.africa/pm2am-anniversary-all-white-affair"
-                target="_blank"
-              >
-                <button className="hero_btn">
-                  <p>GET TICKETS</p>
-                </button>
-              </a>
-            </div> */}
+              </h1> */}
+
+              <button className="hero_btn" onClick={() => setIsModalOpen(true)}>
+                <p>PRE SALE SIGNUP</p>
+              </button>
+            </div>
 
             <div
               className={isPaused ? "hero_music paused" : "hero_music"}
@@ -113,6 +111,12 @@ export default function Home() {
         <footer>
           <Footer />
         </footer>
+        <ModalForm
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          defaultTag="carnival_presale"
+          description="beach carnival tickets dropping soon."
+        />
       </div>{" "}
     </>
   );
