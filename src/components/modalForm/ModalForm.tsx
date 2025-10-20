@@ -70,8 +70,8 @@ export default function ModalForm({
           try {
             const parsed = JSON.parse(maybeText);
             title = parsed?.title;
-          } catch (_) {
-            if (_ instanceof SyntaxError) {
+          } catch (e) {
+            if (e instanceof Error) {
               title = "Invalid email address";
             }
           }
