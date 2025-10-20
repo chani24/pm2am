@@ -8,6 +8,7 @@ type ModalFormProps = {
   defaultTag?: string; // e.g., "presale"
   title?: string;
   description?: string;
+  rejoinUrl?: string; // URL to re-subscribe; replace '#' with real link
 };
 
 export default function ModalForm({
@@ -15,12 +16,14 @@ export default function ModalForm({
   onClose,
   defaultTag = "presale",
   description = "Be the first to know when tickets drop.",
+  rejoinUrl = "http://eepurl.com/iSIglM",
 }: ModalFormProps) {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [optedOut, setOptedOut] = useState(false);
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const isDisabled = loading || !email || !firstName;
 
@@ -51,6 +54,7 @@ export default function ModalForm({
     setLoading(true);
     setError(null);
     setSuccess(null);
+    setOptedOut(false);
     try {
       const res = await fetch("/api/subscribe", {
         method: "POST",
@@ -59,6 +63,31 @@ export default function ModalForm({
       });
       const data = await res.json();
       if (!res.ok) {
+        // Try to parse nested Mailchimp error for opted-out case
+        const maybeText = data?.error?.response?.text;
+        let title: string | undefined;
+        if (typeof maybeText === "string") {
+          try {
+            const parsed = JSON.parse(maybeText);
+            title = parsed?.title;
+          } catch (_) {
+            if (_ instanceof SyntaxError) {
+              title = "Invalid email address";
+            }
+          }
+        } else if (
+          maybeText &&
+          typeof maybeText === "object" &&
+          "title" in maybeText
+        ) {
+          title = (maybeText as { title?: string }).title;
+        }
+
+        if (title === "Forgotten Email Not Subscribed") {
+          setOptedOut(true);
+          // Do not set generic error; we will show a single opt-out message
+          return;
+        }
         throw new Error(data?.message || "Subscription failed");
       }
       setSuccess("You're on the list!");
@@ -135,7 +164,21 @@ export default function ModalForm({
               {loading ? "SUBMITTING..." : "SIGN UP"}
             </button>
           </form>
-          {error ? <p className="mt-4 text-red-400 text-sm">{error}</p> : null}
+          {optedOut ? (
+            <p className="mt-4 text-yellow-300 text-sm">
+              YOU PREVIOUSLY OPTED OUT OF THE GANG. REJOIN
+              <a
+                href={rejoinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline ml-2"
+              >
+                HERE
+              </a>{" "}
+            </p>
+          ) : error ? (
+            <p className="mt-4 text-red-400 text-sm">{error}</p>
+          ) : null}
           {success ? (
             <p className="mt-4 text-green-400 text-sm">{success}</p>
           ) : null}
