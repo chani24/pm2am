@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
-import ModalForm from "@/components/modalForm/ModalForm";
+import TicketsModal from "@/components/ticketsModal/TicketsModal";
 
 const Gallery = dynamic(() => import("@/components/gallery/gallery"), {
   ssr: false, // Disable SSR for this component
@@ -61,7 +61,7 @@ export default function Home() {
             <nav>
               <Nav />
             </nav>
-            <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
+            <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl">
               <span className="monument_black">FOR</span>
               <span className="monument_black">THE REAL</span>
               <span className="monument_black">PARTIERS</span>
@@ -74,7 +74,7 @@ export default function Home() {
               </h1> */}
 
               <button className="hero_btn" onClick={() => setIsModalOpen(true)}>
-                <p>PRE SALE SIGNUP</p>
+                <p>BUY TICKETS 🎟️</p>
               </button>
             </div>
 
@@ -84,12 +84,12 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM 🎃X👻 MADHOUSE PRESENTS: ECHOES OF EKO 🦇🌕 1ST NOV ·
-                  8PM @ THE CLUBHOUSE VI
+                  PM2AM PRESENTS SPORTS EDITION ⚽️🏆 · DEC 6TH · 9PM ·
+                  @NEXTTHOUGHT STUDIOS
                 </p>
                 <p ref={secondText}>
-                  PM2AM 🎃X👻 MADHOUSE PRESENTS: ECHOES OF EKO 🦇🌕 1ST NOV ·
-                  8PM @ THE CLUBHOUSE VI
+                  PM2AM PRESENTS SPORTS EDITION ⚽️🏆 · DEC 6TH · 9PM ·
+                  @NEXTTHOUGHT STUDIOS
                 </p>
               </div>
             </div>
@@ -99,8 +99,8 @@ export default function Home() {
           <div>
             <h2>NEXT UP</h2>
             <h2>
-              <a href="https://tix.africa/pm2ammadhouse" target="_blank">
-                ECHOES OF EKO 🦇↵
+              <a href="https://pv.rsvp/pm2am-sports-edition" target="_blank">
+                SPORTS FESTIVAL ⚽️🏆
               </a>
             </h2>
           </div>
@@ -111,11 +111,10 @@ export default function Home() {
         <footer>
           <Footer />
         </footer>
-        <ModalForm
+        <TicketsModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          defaultTag="carnival_presale"
-          description="beach carnival tickets dropping soon."
+          description="EVENTS 🎟️"
         />
       </div>{" "}
     </>

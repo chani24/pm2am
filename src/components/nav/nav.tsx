@@ -47,15 +47,26 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="pc_links inter">
             <div>
               <p className="mb-2 font-bold">EVENTS</p>
-              <div className="font-semibold">
+              <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
-                  <a href="https://tix.africa/pm2ammadhouse" target="_blank">
-                    ECHOES OF EKO
+                  <a
+                    href="https://pv.rsvp/pm2am-sports-edition"
+                    target="_blank"
+                  >
+                    SPORTS EDITION
+                  </a>
+                  <div className="new">NEW</div>
+                </div>{" "}
+                <div className="flex gap-2 items-center">
+                  <a
+                    href="https://pv.rsvp/the-beach-carnival-ii"
+                    target="_blank"
+                  >
+                    BEACH CARNIVAL II
                   </a>
                   <div className="new">NEW</div>
                 </div>
-                <p>SOCIAL NIGHTS</p>
-                <p>HOT BODY SUMMER</p>
+                <p>ECHOES OF EKO</p>
               </div>
             </div>
             <div>
@@ -99,15 +110,20 @@ export default function Nav(props: { fixed?: boolean }) {
         </div>
         <div className="text-center">
           <p className="mb-5 text-2xl font-black">EVENTS</p>
-          <div className="font-sm font-semibold">
+          <div className="font-sm font-semibold flex flex-col gap-2 items-center">
             <div className="flex gap-2 items-center justify-center">
-              <a href="https://tix.africa/pm2ammadhouse" target="_blank">
-                ECHOES OF EKO
+              <a href="https://pv.rsvp/pm2am-sports-edition" target="_blank">
+                SPORTS EDITION
               </a>
               <div className="new">NEW</div>
             </div>
-            <p className="text-[#C2C2C2]">SOCIAL NIGHTS</p>
-            <p className="text-[#C2C2C2]">HOT BODY SUMMER</p>
+            <div className="flex gap-2 items-center justify-center">
+              <a href="https://pv.rsvp/the-beach-carnival-ii" target="_blank">
+                BEACH CARNIVAL II
+              </a>
+              <div className="new">NEW</div>
+            </div> 
+            <p className="text-[#C2C2C2]">ECHOES OF EKO</p>
           </div>
         </div>
         <div className="nav_footer">
