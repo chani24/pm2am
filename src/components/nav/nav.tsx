@@ -50,15 +50,6 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://pv.rsvp/pm2am-sports-edition"
-                    target="_blank"
-                  >
-                    SPORTS EDITION
-                  </a>
-                  <div className="new">NEW</div>
-                </div>{" "}
-                <div className="flex gap-2 items-center">
-                  <a
                     href="https://pv.rsvp/the-beach-carnival-ii"
                     target="_blank"
                   >
@@ -66,6 +57,7 @@ export default function Nav(props: { fixed?: boolean }) {
                   </a>
                   <div className="new">NEW</div>
                 </div>
+                <p>SPORTS EDITION</p>
                 <p>ECHOES OF EKO</p>
               </div>
             </div>
@@ -111,18 +103,14 @@ export default function Nav(props: { fixed?: boolean }) {
         <div className="text-center">
           <p className="mb-5 text-2xl font-black">EVENTS</p>
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
-            <div className="flex gap-2 items-center justify-center">
-              <a href="https://pv.rsvp/pm2am-sports-edition" target="_blank">
-                SPORTS EDITION
-              </a>
-              <div className="new">NEW</div>
-            </div>
+           
             <div className="flex gap-2 items-center justify-center">
               <a href="https://pv.rsvp/the-beach-carnival-ii" target="_blank">
                 BEACH CARNIVAL II
               </a>
               <div className="new">NEW</div>
-            </div> 
+            </div>
+            <p className="text-[#C2C2C2]">SPORTS EDITION</p>
             <p className="text-[#C2C2C2]">ECHOES OF EKO</p>
           </div>
         </div>

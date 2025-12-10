@@ -84,12 +84,12 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM PRESENTS SPORTS EDITION ⚽️🏆 · DEC 6TH · 9PM ·
-                  @NEXTTHOUGHT STUDIOS
+                  PM2AM PRESENTS BEACH CARNIVAL II 🏖️🎉 · DEC 20TH · 7PM · @VODA
+                  BEACH CLUB
                 </p>
                 <p ref={secondText}>
-                  PM2AM PRESENTS SPORTS EDITION ⚽️🏆 · DEC 6TH · 9PM ·
-                  @NEXTTHOUGHT STUDIOS
+                  PM2AM PRESENTS BEACH CARNIVAL II 🏖️🎉 · DEC 20TH · 7PM · @VODA
+                  BEACH CLUB
                 </p>
               </div>
             </div>
@@ -99,8 +99,8 @@ export default function Home() {
           <div>
             <h2>NEXT UP</h2>
             <h2>
-              <a href="https://pv.rsvp/pm2am-sports-edition" target="_blank">
-                SPORTS FESTIVAL ⚽️🏆
+              <a href="https://pv.rsvp/the-beach-carnival-ii" target="_blank">
+                BEACH CARNIVAL II 🏖️
               </a>
             </h2>
           </div>
@@ -116,7 +116,7 @@ export default function Home() {
           onClose={() => setIsModalOpen(false)}
           description="EVENTS 🎟️"
         />
-      </div>{" "}
+      </div>
     </>
   );
 }

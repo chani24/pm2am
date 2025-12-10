@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const gallery = [
   {
-    image: "sports-ii.jpeg", //"social-nights.png", //"2-girls.jpg",
+    image: "2-girls.jpg",
     span: "1",
-    eventImage: "sports-ii.jpeg",
-    venue: "NEXT THOUGHT STUDIOS",
+    eventImage: "carnival-ii.png",
+    venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://pv.rsvp/pm2am-sports-edition",
+    buttonLink: "https://pv.rsvp/the-beach-carnival-ii",
     buttonText: "BUY TICKETS",
   },
   {
     image: "day-shift-party.jpeg",
     span: "2",
-    eventImage: "carnival.png",
+    eventImage: "carnival-ii.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink: "https://pv.rsvp/the-beach-carnival-ii",

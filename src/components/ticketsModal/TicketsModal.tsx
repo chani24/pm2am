@@ -12,10 +12,10 @@ type ModalFormProps = {
 };
 
 const events = [
-  {
-    name: "SPORTS EDITION ⚽",
-    url: "https://pv.rsvp/pm2am-sports-edition",
-  },
+  // {
+  //   name: "SPORTS EDITION ⚽",
+  //   url: "https://pv.rsvp/pm2am-sports-edition",
+  // },
   {
     name: "BEACH CARNIVAL II 🌴",
     url: "https://pv.rsvp/the-beach-carnival-ii",
