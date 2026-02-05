@@ -84,12 +84,10 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM PRESENTS BEACH CARNIVAL II 🏖️🎉 · DEC 20TH · 7PM · @VODA
-                  BEACH CLUB
+                  THANK YOU FOR PARTYING WITH US @ PM2AM X BULLET PARTY ⚡
                 </p>
                 <p ref={secondText}>
-                  PM2AM PRESENTS BEACH CARNIVAL II 🏖️🎉 · DEC 20TH · 7PM · @VODA
-                  BEACH CLUB
+                  THANK YOU FOR PARTYING WITH US @ PM2AM X BULLET PARTY ⚡
                 </p>
               </div>
             </div>
@@ -97,10 +95,13 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2>NEXT UP</h2>
+            <h2>RECENTLY</h2>
             <h2>
-              <a href="https://pv.rsvp/the-beach-carnival-ii" target="_blank">
-                BEACH CARNIVAL II 🏖️
+              <a
+                href="https://www.instagram.com/p/DUBL33XDLuO/?img_index=4"
+                target="_blank"
+              >
+                PM2AM X BULLET PARTY ⚡
               </a>
             </h2>
           </div>

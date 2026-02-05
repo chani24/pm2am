@@ -5,7 +5,7 @@ import "./styles.css";
 const links = [
   {
     name: "instagram",
-    link: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    link: "https://www.instagram.com/pm2amofficial_/",
     width: 24,
     height: 24,
   },
@@ -50,15 +50,14 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://pv.rsvp/the-beach-carnival-ii"
+                    href="https://www.instagram.com/p/DUBL33XDLuO/?img_index=4"
                     target="_blank"
                   >
-                    BEACH CARNIVAL II
+                    PM2AM X BULLET PARTY ⚡
                   </a>
                   <div className="new">NEW</div>
                 </div>
-                <p>SPORTS EDITION</p>
-                <p>ECHOES OF EKO</p>
+                <p>BEACH CARNIVAL II</p> <p>SPORTS EDITION</p>
               </div>
             </div>
             <div>
@@ -103,15 +102,17 @@ export default function Nav(props: { fixed?: boolean }) {
         <div className="text-center">
           <p className="mb-5 text-2xl font-black">EVENTS</p>
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
-           
             <div className="flex gap-2 items-center justify-center">
-              <a href="https://pv.rsvp/the-beach-carnival-ii" target="_blank">
-                BEACH CARNIVAL II
+              <a
+                href="https://www.instagram.com/p/DUBL33XDLuO/?img_index=4"
+                target="_blank"
+              >
+                PM2AM X BULLET PARTY ⚡
               </a>
               <div className="new">NEW</div>
             </div>
+            <p className="text-[#C2C2C2]">BEACH CARNIVAL II</p>{" "}
             <p className="text-[#C2C2C2]">SPORTS EDITION</p>
-            <p className="text-[#C2C2C2]">ECHOES OF EKO</p>
           </div>
         </div>
         <div className="nav_footer">

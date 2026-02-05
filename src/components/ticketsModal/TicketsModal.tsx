@@ -11,16 +11,12 @@ type ModalFormProps = {
   rejoinUrl?: string; // URL to re-subscribe; replace '#' with real link
 };
 
-const events = [
-  // {
-  //   name: "SPORTS EDITION ⚽",
-  //   url: "https://pv.rsvp/pm2am-sports-edition",
-  // },
-  {
-    name: "BEACH CARNIVAL II 🌴",
-    url: "https://pv.rsvp/the-beach-carnival-ii",
-  },
-];
+type Event = {
+  name: string;
+  url: string;
+};
+
+const events: Event[] = [];
 
 export default function ModalForm({
   isOpen,
@@ -74,22 +70,32 @@ export default function ModalForm({
           <p className="text-center mb-5 text-lg leading-tight">
             {description}
           </p>
-          {events.map((event, index) => (
-            <a
-              key={index}
-              href={event.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full mb-4"
-            >
-              <button
-                type="button"
-                className="w-full px-10 py-5 border border-white text-white hover:bg-white hover:text-black transition"
+          {events.length > 0 ? (
+            events.map((event, index) => (
+              <a
+                key={index}
+                href={event.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full mb-4"
               >
-                {event.name}
-              </button>
-            </a>
-          ))}
+                <button
+                  type="button"
+                  className="w-full px-10 py-5 border border-white text-white hover:bg-white hover:text-black transition"
+                >
+                  {event.name}
+                </button>
+              </a>
+            ))
+          ) : (
+            <button
+              type="button"
+              className="w-full px-10 py-5 border border-white text-white hover:bg-white hover:text-black transition mt-3"
+              disabled
+            >
+              COMING SOON
+            </button>
+          )}
         </div>
       </div>
     </div>

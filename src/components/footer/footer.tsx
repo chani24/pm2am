@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollToPlugin);
 const links = [
   {
     name: "instagram",
-    link: "https://www.instagram.com/_pm2am?igsh=MXJoMXd1eHVnbTZjag==",
+    link: "https://www.instagram.com/pm2amofficial_/",
     width: 24,
     height: 24,
   },
