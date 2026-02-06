@@ -16,7 +16,12 @@ type Event = {
   url: string;
 };
 
-const events: Event[] = [];
+const events: Event[] = [
+  {
+    name: "NO LOVE IN LAGOS 💘",
+    url: "https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219",
+  },
+];
 
 export default function ModalForm({
   isOpen,

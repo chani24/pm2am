@@ -50,14 +50,15 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://www.instagram.com/p/DUBL33XDLuO/?img_index=4"
+                    href="https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219"
                     target="_blank"
                   >
-                    PM2AM X BULLET PARTY ⚡
+                    NO LOVE IN LAGOS 💘
                   </a>
                   <div className="new">NEW</div>
                 </div>
-                <p>BEACH CARNIVAL II</p> <p>SPORTS EDITION</p>
+                <p>PM2AM X BULLET PARTY</p>
+                <p>BEACH CARNIVAL II</p>
               </div>
             </div>
             <div>
@@ -104,15 +105,15 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
             <div className="flex gap-2 items-center justify-center">
               <a
-                href="https://www.instagram.com/p/DUBL33XDLuO/?img_index=4"
+                href="https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219"
                 target="_blank"
               >
-                PM2AM X BULLET PARTY ⚡
+                NO LOVE IN LAGOS 💘
               </a>
               <div className="new">NEW</div>
             </div>
-            <p className="text-[#C2C2C2]">BEACH CARNIVAL II</p>{" "}
-            <p className="text-[#C2C2C2]">SPORTS EDITION</p>
+            <p className="text-[#C2C2C2]">PM2AM X BULLET PARTY</p>
+            <p className="text-[#C2C2C2]">BEACH CARNIVAL II</p>
           </div>
         </div>
         <div className="nav_footer">

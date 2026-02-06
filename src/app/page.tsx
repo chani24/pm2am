@@ -61,10 +61,10 @@ export default function Home() {
             <nav>
               <Nav />
             </nav>
-            <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl">
-              <span className="monument_black">FOR</span>
-              <span className="monument_black">THE REAL</span>
-              <span className="monument_black">PARTIERS</span>
+            <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row">
+              <span className="rubik">FOR</span>
+              <span className="rubik"> THE REAL </span>
+              <span className="rubik">PARTIERS</span>
             </h1>
             <div className="btn_container">
               {/* <h1 className="hero_text flex justify-center items-center lg:gap-3 sm:gap-[40px] gap-5 flex-col lg:flex-row text-3xl ">
@@ -84,10 +84,12 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  THANK YOU FOR PARTYING WITH US @ PM2AM X BULLET PARTY ⚡
+                  PM2AM PRESENTS: NO LOVE IN LAGOS 💘 • 28.02.26 • 8PM @ PRAIA
+                  VI
                 </p>
                 <p ref={secondText}>
-                  THANK YOU FOR PARTYING WITH US @ PM2AM X BULLET PARTY ⚡
+                  PM2AM PRESENTS: NO LOVE IN LAGOS 💘 • 28.02.26 • 8PM @ PRAIA
+                  VI
                 </p>
               </div>
             </div>
@@ -95,13 +97,13 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2>RECENTLY</h2>
-            <h2>
+            <h2 className="monument">NEXT UP</h2>
+            <h2 className="monument">
               <a
-                href="https://www.instagram.com/p/DUBL33XDLuO/?img_index=4"
+                href="https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219"
                 target="_blank"
               >
-                PM2AM X BULLET PARTY ⚡
+                NO LOVE IN LAGOS 💘
               </a>
             </h2>
           </div>

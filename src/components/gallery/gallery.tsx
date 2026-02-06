@@ -7,11 +7,11 @@ const gallery = [
   {
     image: "girl-at-bullet-party.png",
     span: "1",
-    eventImage: "bullet-party.png",
+    eventImage: "no-love-in-lagos.png",
     venue: "PRAIA LAGOS, VI",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DUBL33XDLuO/?img_index=4",
-    buttonText: "VIEW MORE",
+    buttonLink: "https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219",
+    buttonText: "BUY TICKETS",
   },
   {
     image: "2-girls-ii.png",
@@ -21,7 +21,8 @@ const gallery = [
     location: "LAGOS",
     buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
     buttonText: "VIEW MORE",
-  }, {
+  },
+  {
     image: "partying-at-bullet.png",
     span: "1",
     eventImage: "bullet-party.png",

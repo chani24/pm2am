@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Inter, Praise } from "next/font/google";
+import { Inter, Praise, Rubik_Glitch } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,6 +15,13 @@ const praise = Praise({
   display: "swap",
   weight: "400",
 });
+
+const rubikGlitch = Rubik_Glitch({
+  subsets: ["latin"],
+  variable: "--font-rubik",
+  display: "swap",
+  weight: "400"
+})
 
 const monumentBlack = localFont({
   src: "./fonts/PPMonument/PPMonumentExtended-Black.otf",
@@ -96,7 +103,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${monument.variable} ${monumentLight.variable} ${monumentBlack.variable} ${praise.variable} ${inter.variable} antialiased`}
+        className={`${monument.variable} ${monumentLight.variable} ${monumentBlack.variable} ${praise.variable} ${inter.variable} ${rubikGlitch.variable} antialiased`}
       >
         {children}
       </body>
