@@ -50,7 +50,7 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219"
+                    href="https://www.pv.rsvp/pm2am-no-love-in-lagos"
                     target="_blank"
                   >
                     NO LOVE IN LAGOS 💘
@@ -105,7 +105,7 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
             <div className="flex gap-2 items-center justify-center">
               <a
-                href="https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219"
+                href="https://www.pv.rsvp/pm2am-no-love-in-lagos"
                 target="_blank"
               >
                 NO LOVE IN LAGOS 💘

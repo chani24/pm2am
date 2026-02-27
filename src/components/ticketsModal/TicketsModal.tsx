@@ -19,7 +19,7 @@ type Event = {
 const events: Event[] = [
   {
     name: "NO LOVE IN LAGOS 💘",
-    url: "https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219",
+    url: "https://www.pv.rsvp/pm2am-no-love-in-lagos",
   },
 ];
 

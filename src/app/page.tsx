@@ -97,10 +97,10 @@ export default function Home() {
         </section>
         <section className="event_section">
           <div>
-            <h2 className="monument-black">NEXT UP</h2>
+            <h2>NEXT UP</h2>
             <h2 className="monument">
               <a
-                href="https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219"
+                href="https://www.pv.rsvp/pm2am-no-love-in-lagos"
                 target="_blank"
               >
                 NO LOVE IN LAGOS 💘

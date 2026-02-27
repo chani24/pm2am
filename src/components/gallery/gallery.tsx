@@ -10,7 +10,7 @@ const gallery = [
     eventImage: "no-love-in-lagos.png",
     venue: "PRAIA LAGOS, VI",
     location: "LAGOS",
-    buttonLink: "https://chowdeck.rsvp/pm2am-no-love-in-lagos1770210032219",
+    buttonLink: "https://www.pv.rsvp/pm2am-no-love-in-lagos",
     buttonText: "BUY TICKETS",
   },
   {
