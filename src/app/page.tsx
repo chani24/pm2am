@@ -84,12 +84,12 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM PRESENTS: NO LOVE IN LAGOS 💘 • 28.02.26 • 8PM @ PRAIA
-                  VI
+                  PM2AM PRESENTS: THE ANNIVERSARY • 04.04.26 • 9PM @ VODA BEACH
+                  CLUB
                 </p>
                 <p ref={secondText}>
-                  PM2AM PRESENTS: NO LOVE IN LAGOS 💘 • 28.02.26 • 8PM @ PRAIA
-                  VI
+                  PM2AM PRESENTS: THE ANNIVERSARY • 04.04.26 • 9PM @ VODA BEACH
+                  CLUB
                 </p>
               </div>
             </div>
@@ -100,10 +100,10 @@ export default function Home() {
             <h2>NEXT UP</h2>
             <h2 className="monument">
               <a
-                href="https://www.pv.rsvp/pm2am-no-love-in-lagos"
+                href="https://tix.africa/discover/pm2am-anniversary"
                 target="_blank"
               >
-                NO LOVE IN LAGOS 💘
+                PM2AM: THE ANNIVERSARY
               </a>
             </h2>
           </div>

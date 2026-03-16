@@ -18,8 +18,8 @@ type Event = {
 
 const events: Event[] = [
   {
-    name: "NO LOVE IN LAGOS 💘",
-    url: "https://www.pv.rsvp/pm2am-no-love-in-lagos",
+    name: "PM2AM: THE ANNIVERSARY",
+    url: "https://tix.africa/discover/pm2am-anniversary",
   },
 ];
 

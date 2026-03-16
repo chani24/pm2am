@@ -50,15 +50,15 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://www.pv.rsvp/pm2am-no-love-in-lagos"
+                    href="https://tix.africa/discover/pm2am-anniversary"
                     target="_blank"
                   >
-                    NO LOVE IN LAGOS 💘
+                    PM2AM: THE ANNIVERSARY
                   </a>
                   <div className="new">NEW</div>
                 </div>
+                <p>NO LOVE IN LAGOS 💘</p>
                 <p>PM2AM X BULLET PARTY</p>
-                <p>BEACH CARNIVAL II</p>
               </div>
             </div>
             <div>
@@ -105,15 +105,15 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
             <div className="flex gap-2 items-center justify-center">
               <a
-                href="https://www.pv.rsvp/pm2am-no-love-in-lagos"
+                href="https://tix.africa/discover/pm2am-anniversary"
                 target="_blank"
               >
-                NO LOVE IN LAGOS 💘
+                PM2AM: THE ANNIVERSARY
               </a>
               <div className="new">NEW</div>
             </div>
+            <p className="text-[#C2C2C2]">NO LOVE IN LAGOS 💘</p>
             <p className="text-[#C2C2C2]">PM2AM X BULLET PARTY</p>
-            <p className="text-[#C2C2C2]">BEACH CARNIVAL II</p>
           </div>
         </div>
         <div className="nav_footer">

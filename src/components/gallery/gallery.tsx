@@ -7,10 +7,10 @@ const gallery = [
   {
     image: "girl-at-bullet-party.png",
     span: "1",
-    eventImage: "no-love-in-lagos.png",
-    venue: "PRAIA LAGOS, VI",
+    eventImage: "girl-at-bullet-party.png",
+    venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://www.pv.rsvp/pm2am-no-love-in-lagos",
+    buttonLink: "https://tix.africa/discover/pm2am-anniversary",
     buttonText: "BUY TICKETS",
   },
   {
