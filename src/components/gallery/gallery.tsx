@@ -7,7 +7,7 @@ const gallery = [
   {
     image: "girl-at-bullet-party.png",
     span: "1",
-    eventImage: "girl-at-bullet-party.png",
+    eventImage: "anniversary.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink: "https://tix.africa/discover/pm2am-anniversary",
@@ -318,7 +318,13 @@ export default function Gallery() {
                   <span className="light">LOCATION</span>
                   <span>{item.location}</span>
                 </div>
-                <a target="_blank" href={item.buttonLink || "https://www.instagram.com/pm2amofficial_/"}>
+                <a
+                  target="_blank"
+                  href={
+                    item.buttonLink ||
+                    "https://www.instagram.com/pm2amofficial_/"
+                  }
+                >
                   <button>{item.buttonText}</button>
                 </a>
               </div>
