@@ -10,7 +10,7 @@ const gallery = [
     eventImage: "ftrp.png",
     venue: "PRAIA LAGOS",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/discover/pm2am-anniversary",
+    buttonLink: "https://tix.africa/discover/pm2am-for-the-real-partiers",
     buttonText: "BUY TICKETS",
   },
   {
