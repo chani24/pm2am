@@ -84,12 +84,12 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM PRESENTS: THE ANNIVERSARY • 04.04.26 • 9PM @ VODA BEACH
-                  CLUB
+                  PM2AM PRESENTS: FOR THE REAL PARTIERS • 02.05.26 • 8PM @ PRAIA
+                  LAGOS
                 </p>
                 <p ref={secondText}>
-                  PM2AM PRESENTS: THE ANNIVERSARY • 04.04.26 • 9PM @ VODA BEACH
-                  CLUB
+                  PM2AM PRESENTS: FOR THE REAL PARTIERS • 02.05.26 • 8PM @ PRAIA
+                  LAGOS
                 </p>
               </div>
             </div>
@@ -100,10 +100,10 @@ export default function Home() {
             <h2>NEXT UP</h2>
             <h2 className="monument">
               <a
-                href="https://tix.africa/discover/pm2am-anniversary"
+                href="https://tix.africa/discover/pm2am-for-the-real-partiers"
                 target="_blank"
               >
-                PM2AM: THE ANNIVERSARY
+                PM2AM: FOR THE REAL PARTIERS
               </a>
             </h2>
           </div>

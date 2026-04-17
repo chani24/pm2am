@@ -18,7 +18,7 @@ type Event = {
 
 const events: Event[] = [
   {
-    name: "PM2AM: THE ANNIVERSARY",
+    name: "PM2AM: FOR THE REAL PARTIERS",
     url: "https://tix.africa/discover/pm2am-anniversary",
   },
 ];

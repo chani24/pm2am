@@ -7,8 +7,8 @@ const gallery = [
   {
     image: "girl-at-bullet-party.png",
     span: "1",
-    eventImage: "anniversary.png",
-    venue: "VODA BEACH CLUB",
+    eventImage: "ftrp.png",
+    venue: "PRAIA LAGOS",
     location: "LAGOS",
     buttonLink: "https://tix.africa/discover/pm2am-anniversary",
     buttonText: "BUY TICKETS",

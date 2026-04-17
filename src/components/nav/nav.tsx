@@ -50,15 +50,15 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://tix.africa/discover/pm2am-anniversary"
+                    href="https://tix.africa/discover/pm2am-for-the-real-partiers"
                     target="_blank"
                   >
-                    PM2AM: THE ANNIVERSARY
+                    PM2AM: FOR THE REAL PARTIERS
                   </a>
                   <div className="new">NEW</div>
                 </div>
+                <p>PM2AM: THE ANNIVERSARY</p>
                 <p>NO LOVE IN LAGOS 💘</p>
-                <p>PM2AM X BULLET PARTY</p>
               </div>
             </div>
             <div>
@@ -105,15 +105,15 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
             <div className="flex gap-2 items-center justify-center">
               <a
-                href="https://tix.africa/discover/pm2am-anniversary"
+                href="https://tix.africa/discover/pm2am-for-the-real-partiers"
                 target="_blank"
               >
-                PM2AM: THE ANNIVERSARY
+                PM2AM: FOR THE REAL PARTIERS
               </a>
               <div className="new">NEW</div>
             </div>
+            <p className="text-[#C2C2C2]">PM2AM: THE ANNIVERSARY</p>
             <p className="text-[#C2C2C2]">NO LOVE IN LAGOS 💘</p>
-            <p className="text-[#C2C2C2]">PM2AM X BULLET PARTY</p>
           </div>
         </div>
         <div className="nav_footer">
