@@ -5,6 +5,7 @@ import Nav from "@/components/nav/nav";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import TicketsModal from "@/components/ticketsModal/TicketsModal";
 
@@ -57,6 +58,14 @@ export default function Home() {
       </nav>
       <div>
         <section className="hero_section monument">
+          <Image
+            src="/new-hero.png"
+            alt="PM2AM hero"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
           <div>
             <nav>
               <Nav />

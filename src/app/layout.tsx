@@ -102,9 +102,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preload" href="/new-hero.png" as="image" type="image/png" />
-      </head>
       <body
         className={`${monument.variable} ${monumentLight.variable} ${monumentBlack.variable} ${praise.variable} ${inter.variable} ${rubikGlitch.variable} antialiased`}
       >

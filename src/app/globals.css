@@ -40,11 +40,10 @@ body {
 .hero_section {
   width: 100%;
   height: 100dvh;
-  background-image: url("/new-hero.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   & > div {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     display: flex;
