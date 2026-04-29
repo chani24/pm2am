@@ -7,27 +7,38 @@ gsap.registerPlugin(ScrollToPlugin);
 const links = [
   {
     name: "instagram",
-    link: "https://www.instagram.com/pm2amofficial_/",
+    link: "https://www.instagram.com/pm.2am/",
     width: 24,
     height: 24,
   },
   {
     name: "twitter",
     link: "https://x.com/pm2am_?s=21",
-    width: 26.56,
+    width: 25,
     height: 24,
   },
-  { name: "spotify", link: "/", width: 24, height: 24 },
+  {
+    name: "snapchat",
+    link: "https://snapchat.com/t/h7hWHPuu",
+    width: 25,
+    height: 24,
+  },
   {
     name: "whatsapp",
     link: "https://chat.whatsapp.com/D4Uww3fQ5hXK1yhQ383Szt",
-    width: 23.87,
+    width: 25,
     height: 24,
   },
   {
     name: "tiktok",
     link: "https://www.tiktok.com/@pm2am_?_t=ZM-8roQ7TLm78x&_r=1",
-    width: 20.97,
+    width: 25,
+    height: 24,
+  },
+  {
+    name: "youtube",
+    link: "https://www.youtube.com/@Pm2amgang",
+    width: 25,
     height: 24,
   },
 ];
@@ -132,7 +143,7 @@ export default function Footer() {
             })}
           </div>
           <p className="mt-[40px] md:mt-[60px] text-center inter font-semibold">
-            ©2025 PM2AM® ALL RIGHTS RESERVED
+            ©2026 PM2AM® ALL RIGHTS RESERVED
           </p>
         </div>
       </div>

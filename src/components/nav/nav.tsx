@@ -15,7 +15,12 @@ const links = [
     width: 26.56,
     height: 24,
   },
-  { name: "spotify", link: "", width: 24, height: 24 },
+  {
+    name: "snapchat",
+    link: "https://snapchat.com/t/h7hWHPuu",
+    width: 25,
+    height: 24,
+  },
   {
     name: "whatsapp",
     link: "https://chat.whatsapp.com/D4Uww3fQ5hXK1yhQ383Szt",
@@ -26,6 +31,12 @@ const links = [
     name: "tiktok",
     link: "https://www.tiktok.com/@pm2am_?_t=ZM-8roQ7TLm78x&_r=1",
     width: 20.97,
+    height: 24,
+  },
+  {
+    name: "youtube",
+    link: "https://www.youtube.com/@Pm2amgang",
+    width: 25,
     height: 24,
   },
 ];
