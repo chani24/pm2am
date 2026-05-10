@@ -93,11 +93,11 @@ export default function Home() {
             >
               <div ref={slider} className="marquee">
                 <p ref={firstText}>
-                  PM2AM PRESENTS: FOR THE REAL PARTIERS • 02.05.26 • 8PM @ PRAIA
+                  PM2AM PRESENTS: FOR THE REAL PARTIERS • 31.05.26 • 8PM @ PRAIA
                   LAGOS
                 </p>
                 <p ref={secondText}>
-                  PM2AM PRESENTS: FOR THE REAL PARTIERS • 02.05.26 • 8PM @ PRAIA
+                  PM2AM PRESENTS: FOR THE REAL PARTIERS • 31.05.26 • 8PM @ PRAIA
                   LAGOS
                 </p>
               </div>
@@ -109,7 +109,7 @@ export default function Home() {
             <h2>NEXT UP</h2>
             <h2 className="monument">
               <a
-                href="https://tix.africa/discover/pm2am-for-the-real-partiers"
+                href="https://tix.africa/discover/pm2am-for-the-real-partiers-ii"
                 target="_blank"
               >
                 PM2AM: FOR THE REAL PARTIERS

@@ -61,7 +61,7 @@ export default function Nav(props: { fixed?: boolean }) {
               <div className="font-semibold flex flex-col gap-1">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://tix.africa/discover/pm2am-for-the-real-partiers"
+                    href="https://tix.africa/discover/pm2am-for-the-real-partiers-ii"
                     target="_blank"
                   >
                     PM2AM: FOR THE REAL PARTIERS
@@ -116,7 +116,7 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
             <div className="flex gap-2 items-center justify-center">
               <a
-                href="https://tix.africa/discover/pm2am-for-the-real-partiers"
+                href="https://tix.africa/discover/pm2am-for-the-real-partiers-ii"
                 target="_blank"
               >
                 PM2AM: FOR THE REAL PARTIERS

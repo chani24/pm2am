@@ -7,10 +7,10 @@ const gallery = [
   {
     image: "girl-at-bullet-party.png",
     span: "1",
-    eventImage: "ftrp.png",
+    eventImage: "ftrp.jpeg",
     venue: "PRAIA LAGOS",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/discover/pm2am-for-the-real-partiers",
+    buttonLink: "https://tix.africa/discover/pm2am-for-the-real-partiers-ii",
     buttonText: "BUY TICKETS",
   },
   {

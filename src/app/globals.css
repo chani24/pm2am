@@ -172,6 +172,9 @@ body {
   .gallery_section {
     padding: 0px 120px 120px 120px;
   }
+  .event_section{
+    padding: 60px 120px;
+  }
 }
 
 @media (min-width: 1440px) {
