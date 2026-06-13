@@ -18,8 +18,8 @@ type Event = {
 
 const events: Event[] = [
   {
-    name: "PM2AM: FOR THE REAL PARTIERS",
-    url: "https://tix.africa/discover/pm2am-for-the-real-partiers-ii",
+    name: "HOT BODY SUMMER",
+    url: "https://tix.africa/discover/pm2am-hot-body",
   },
 ];
 
