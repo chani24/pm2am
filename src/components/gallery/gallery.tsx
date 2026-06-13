@@ -7,10 +7,10 @@ const gallery = [
   {
     image: "girl-at-bullet-party.png",
     span: "1",
-    eventImage: "ftrp.jpeg",
-    venue: "PRAIA LAGOS",
+    eventImage: "hot-body-2.jpeg",
+    venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/discover/pm2am-for-the-real-partiers-ii",
+    buttonLink: "https://tix.africa/discover/pm2am-hot-body",
     buttonText: "BUY TICKETS",
   },
   {
