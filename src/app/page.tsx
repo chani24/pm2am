@@ -23,6 +23,15 @@ export default function Home() {
   const [countdown, setCountdown] = useState<{ days: number; hours: number } | null>(null);
   const slider = useRef(null);
   const xPercent = useRef(0);
+  const [activeMerch, setActiveMerch] = useState(0);
+  const touchStartX = useRef(0);
+  const merchTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const goToMerch = (idx: number) => {
+    setActiveMerch(idx);
+    if (merchTimerRef.current) clearInterval(merchTimerRef.current);
+    merchTimerRef.current = setInterval(() => setActiveMerch(p => (p + 1) % 2), 5000);
+  };
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -77,6 +86,11 @@ export default function Home() {
     );
     observer.observe(hero);
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    merchTimerRef.current = setInterval(() => setActiveMerch(p => (p + 1) % 2), 5000);
+    return () => { if (merchTimerRef.current) clearInterval(merchTimerRef.current); };
   }, []);
   return (
     <>
@@ -163,28 +177,60 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="merch_section">
-          <div className="merch_images">
-            <div className="merch_image_item">
+        <section
+          className="merch_section"
+          onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+          onTouchEnd={(e) => {
+            const diff = touchStartX.current - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) goToMerch(diff > 0 ? 1 : 0);
+          }}
+        >
+          <div className="merch_track" style={{ transform: `translateX(-${activeMerch * 100}%)` }}>
+            <div className="merch_slide">
               <Image
-                src="https://shop.mavinrecords.com/wp-content/uploads/2026/06/hot-body-bikini-2.png"
+                src="/hot-body.png"
                 alt="Hot Body Bikini"
                 fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 90vw"
+                priority
               />
+              <div className="merch_overlay" />
+            </div>
+            <div className="merch_slide">
+              <Image
+                src="/pm-merch.png"
+                alt="PM2AM Store"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 90vw"
+              />
+              <div className="merch_overlay" />
             </div>
           </div>
-          <div className="merch_content monument">
-            <p className="merch_label inter">WEAR THE GANG</p>
-            <h2 className="merch_title">HOT BODY<br />BIKINI</h2>
-            <a
-              href="https://shop.mavinrecords.com/product/hot-body-bikini/"
-              target="_blank"
-              className="merch_btn inter"
-            >
-              SHOP NOW →
-            </a>
+
+          <div className="merch_text_layer">
+            {[
+              { eyebrow: "IN COLLAB WITH MAVIN RECORDS", titleLines: ["HOT BODY", "BIKINI"], link: "https://shop.mavinrecords.com/product/hot-body-bikini/", cta: "SHOP COLLAB →" },
+              { eyebrow: "PM2AM OFFICIAL STORE", titleLines: ["PM2AM", "STORE"], link: "https://pm2amstore.bumpa.shop", cta: "SHOP NOW →" },
+            ].map((slide, i) => (
+              <div key={i} className={`merch_text_slide${i === activeMerch ? " active" : ""}`}>
+                <p className="merch_eyebrow inter">{slide.eyebrow}</p>
+                <h2 className="merch_title monument">{slide.titleLines[0]}<br />{slide.titleLines[1]}</h2>
+                <a href={slide.link} target="_blank" className="merch_btn inter">{slide.cta}</a>
+              </div>
+            ))}
+          </div>
+
+          <span className="merch_counter inter">0{activeMerch + 1} / 02</span>
+
+          <button className="merch_arrow merch_prev" aria-label="Previous" onClick={() => goToMerch((activeMerch - 1 + 2) % 2)}>‹</button>
+          <button className="merch_arrow merch_next" aria-label="Next" onClick={() => goToMerch((activeMerch + 1) % 2)}>›</button>
+
+          <div className="merch_dots">
+            {[0, 1].map(i => (
+              <button key={i} className={`merch_dot${i === activeMerch ? " active" : ""}`} onClick={() => goToMerch(i)} aria-label={`Go to slide ${i + 1}`} />
+            ))}
           </div>
         </section>
         <section className="gallery_section">

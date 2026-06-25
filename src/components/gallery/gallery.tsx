@@ -4,8 +4,18 @@ import "./gallery.css";
 import Image from "next/image";
 
 const gallery = [
+  // Row 1 — wide left, narrow right
   {
-    image: "girl-at-bullet-party.png",
+    image: "two-djs.jpg",
+    span: "2",
+    eventImage: "anniversary.png",
+    venue: "VODA BEACH CLUB",
+    location: "LAGOS",
+    buttonLink: "https://www.instagram.com/p/DWwqgNIDOcN/",
+    buttonText: "VIEW MORE",
+  },
+  {
+    image: "hot-bodies.png",
     span: "1",
     eventImage: "hot-body-2.jpeg",
     venue: "VODA BEACH CLUB",
@@ -13,9 +23,10 @@ const gallery = [
     buttonLink: "https://tix.africa/discover/pm2am-hot-body",
     buttonText: "BUY TICKETS",
   },
+  // Row 2 — narrow left, wide right
   {
-    image: "two-djs.jpg",
-    span: "2",
+    image: "artiste-performing.jpg",
+    span: "1",
     eventImage: "anniversary.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
@@ -31,13 +42,14 @@ const gallery = [
     buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
     buttonText: "VIEW MORE",
   },
+  // Row 3 — wide left, narrow right
   {
-    image: "artiste-performing.jpg",
-    span: "1",
-    eventImage: "anniversary.png",
+    image: "3-girls.jpeg",
+    span: "2",
+    eventImage: "day-shift.jpeg",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DWwqgNIDOcN/",
+    buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
     buttonText: "VIEW MORE",
   },
   {
@@ -48,15 +60,6 @@ const gallery = [
     location: "LAGOS",
     buttonLink: "https://tix.africa/discover/pm2am-hot-body",
     buttonText: "BUY TICKETS",
-  },
-  {
-    image: "3-girls.jpeg",
-    span: "2",
-    eventImage: "day-shift.jpeg",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
-    buttonText: "VIEW MORE",
   },
 ];
 
