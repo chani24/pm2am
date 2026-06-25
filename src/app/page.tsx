@@ -201,7 +201,7 @@ export default function Home() {
                 src="/hot-body.png"
                 alt="Hot Body Bikini"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-[center_15%] md:object-center"
                 sizes="(max-width: 768px) 100vw, 90vw"
                 priority
               />
@@ -212,7 +212,7 @@ export default function Home() {
                 src="/pm-merch.png"
                 alt="PM2AM Store"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-[center_15%] md:object-center"
                 sizes="(max-width: 768px) 100vw, 90vw"
               />
               <div className="merch_overlay" />
