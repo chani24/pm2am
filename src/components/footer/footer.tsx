@@ -123,9 +123,7 @@ export default function Footer() {
         </div>
         <div className="nav_footer">
           <a target="_blank" href="mailto:pm2amgang@gmail.com">
-            <p className="mb-5 text-lg font-semibold underline font-black">
-              PM2AMGANG@GMAIL.COM
-            </p>
+            <p>PM2AMGANG@GMAIL.COM</p>
           </a>
 
           <div className="flex gap-5 items-center">
@@ -142,7 +140,7 @@ export default function Footer() {
               );
             })}
           </div>
-          <p className="mt-[40px] md:mt-[60px] text-center inter font-semibold">
+          <p className="text-center inter" style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", color: "#666", marginTop: 32 }}>
             ©2026 PM2AM® ALL RIGHTS RESERVED
           </p>
         </div>

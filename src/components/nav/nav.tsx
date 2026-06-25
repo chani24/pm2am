@@ -73,6 +73,20 @@ export default function Nav(props: { fixed?: boolean }) {
               </div>
             </div>
             <div>
+              <p className="mb-2 font-bold">MERCH</p>
+              <div className="font-semibold flex flex-col gap-1">
+                <div className="flex gap-2 items-center">
+                  <a
+                    href="https://shop.mavinrecords.com/product/hot-body-bikini/"
+                    target="_blank"
+                  >
+                    HOT BODY BIKINI
+                  </a>
+                  <div className="new">NEW</div>
+                </div>
+              </div>
+            </div>
+            <div>
               <p className="mb-2 font-bold">CONTACT US</p>
               <div className="font-semibold">
                 <div>
@@ -108,6 +122,20 @@ export default function Nav(props: { fixed?: boolean }) {
             <div className="pc_links"></div>
             <div className={dropDown ? "mobile_links active" : "mobile_links"}>
               <button onClick={() => setDropdown(!dropDown)}>CLOSE</button>
+            </div>
+          </div>
+        </div>
+        <div className="text-center">
+          <p className="mb-5 text-2xl font-black">MERCH</p>
+          <div className="font-sm font-semibold flex flex-col gap-2 items-center mb-10">
+            <div className="flex gap-2 items-center justify-center">
+              <a
+                href="https://shop.mavinrecords.com/product/hot-body-bikini/"
+                target="_blank"
+              >
+                HOT BODY BIKINI
+              </a>
+              <div className="new">NEW</div>
             </div>
           </div>
         </div>
@@ -149,7 +177,7 @@ export default function Nav(props: { fixed?: boolean }) {
             })}
           </div>
           <p className="mt-[40px] text-center inter font-semibold">
-            ©2025 PM2AM® ALL RIGHTS RESERVED
+            ©2026 PM2AM® ALL RIGHTS RESERVED
           </p>
         </div>
       </div>

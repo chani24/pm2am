@@ -23,15 +23,14 @@ const gallery = [
     buttonText: "VIEW MORE",
   },
   {
-    image: "two-dancing.jpg",
-    span: "1",
-    eventImage: "anniversary.png",
+    image: "day-shift-party.jpeg",
+    span: "2",
+    eventImage: "carnival-ii.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DWwqgNIDOcN/",
+    buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
     buttonText: "VIEW MORE",
   },
-
   {
     image: "artiste-performing.jpg",
     span: "1",
@@ -42,60 +41,13 @@ const gallery = [
     buttonText: "VIEW MORE",
   },
   {
-    image: "girl-hands-up.jpeg",
-    span: "1",
-    eventImage: "anniversary.png",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DWwqgNIDOcN/",
-    buttonText: "VIEW MORE",
-  },
-  {
-    image: "2-girls-ii.png",
-    span: "1",
-    eventImage: "carnival-ii.png",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
-    buttonText: "VIEW MORE",
-  },
-  {
-    image: "partying-at-bullet.png",
-    span: "1",
-    eventImage: "bullet-party.png",
-    venue: "PRAIA LAGOS, VI",
-    location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DUBL33XDLuO/?img_index=4",
-    buttonText: "VIEW MORE",
-  },
-
-  {
     image: "2-girls.jpg",
     span: "1",
-    eventImage: "carnival-ii.png",
+    eventImage: "hot-body-2.jpeg",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
-    buttonText: "VIEW MORE",
-  },
-
-  {
-    image: "guy-smiling.jpg",
-    span: "1",
-    eventImage: "day-shift.jpeg",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink: "",
-    buttonText: "VIEW MORE",
-  },
-  {
-    image: "day-shift-party.jpeg",
-    span: "2",
-    eventImage: "carnival-ii.png",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
-    buttonText: "VIEW MORE",
+    buttonLink: "https://tix.africa/discover/pm2am-hot-body",
+    buttonText: "BUY TICKETS",
   },
   {
     image: "3-girls.jpeg",
@@ -103,16 +55,7 @@ const gallery = [
     eventImage: "day-shift.jpeg",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "",
-    buttonText: "VIEW MORE",
-  },
-  {
-    image: "girl-in-brazil.jpg",
-    span: "1",
-    eventImage: "day-shift.jpeg",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink: "",
+    buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
     buttonText: "VIEW MORE",
   },
 ];
@@ -131,7 +74,7 @@ export default function Gallery() {
       {gallery.map((item, index) => {
         return (
           <div
-            className={`gallery_container relative col-span-3 h-[500px] overflow-hidden`}
+            className="gallery_container relative col-span-3 h-[500px] overflow-hidden"
             key={index}
             style={{
               gridColumn: isMobile
