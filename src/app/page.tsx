@@ -79,14 +79,6 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      video.muted = true;
-      video.play().catch(() => {});
-    }
-  }, []);
-
-  useEffect(() => {
     const hero = heroRef.current;
     if (!hero) return;
     const observer = new IntersectionObserver(
@@ -109,7 +101,10 @@ export default function Home() {
       <div>
         <section className="hero_section monument" ref={heroRef}>
           <video
-            ref={videoRef}
+            ref={(el) => {
+              videoRef.current = el;
+              if (el) el.muted = true;
+            }}
             autoPlay
             muted
             loop
