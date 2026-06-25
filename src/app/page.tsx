@@ -17,6 +17,7 @@ export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const heroRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showStickyBar, setShowStickyBar] = useState(false);
@@ -78,6 +79,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true;
+      video.play().catch(() => {});
+    }
+  }, []);
+
+  useEffect(() => {
     const hero = heroRef.current;
     if (!hero) return;
     const observer = new IntersectionObserver(
@@ -100,6 +109,7 @@ export default function Home() {
       <div>
         <section className="hero_section monument" ref={heroRef}>
           <video
+            ref={videoRef}
             autoPlay
             muted
             loop
