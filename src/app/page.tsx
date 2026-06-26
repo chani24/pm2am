@@ -99,17 +99,10 @@ export default function Home() {
       </nav>
       <div>
         <section className="hero_section monument" ref={heroRef}>
-          <video
-            ref={(el) => { if (el) el.muted = true; }}
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/new-hero.png"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          >
-            <source src="/hot-body-video.mp4" type="video/mp4" />
-          </video>
+          <div
+            className="absolute inset-0 w-full h-full"
+            dangerouslySetInnerHTML={{ __html: `<video autoplay muted loop playsinline poster="/new-hero.png" class="absolute inset-0 w-full h-full object-cover object-center"><source src="/hot-body-video.mp4" type="video/mp4"></video>` }}
+          />
           <div>
             <nav>
               <Nav />
