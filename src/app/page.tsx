@@ -9,9 +9,8 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import TicketsModal from "@/components/ticketsModal/TicketsModal";
 
-const Gallery = dynamic(() => import("@/components/gallery/gallery"), {
-  ssr: false, // Disable SSR for this component
-});
+const Gallery = dynamic(() => import("@/components/gallery/gallery"), { ssr: false });
+const HeroVideo = dynamic(() => import("@/components/HeroVideo"), { ssr: false });
 
 export default function Home() {
   const firstText = useRef(null);
@@ -99,10 +98,7 @@ export default function Home() {
       </nav>
       <div>
         <section className="hero_section monument" ref={heroRef}>
-          <div
-            className="absolute inset-0 w-full h-full"
-            dangerouslySetInnerHTML={{ __html: `<video autoplay muted loop playsinline poster="/new-hero.png" class="absolute inset-0 w-full h-full object-cover object-center"><source src="/hot-body-video.mp4" type="video/mp4"></video>` }}
-          />
+          <HeroVideo />
           <div>
             <nav>
               <Nav />
