@@ -3,7 +3,6 @@
 export default function HeroVideo() {
   return (
     <video
-      ref={(el) => { if (el) el.muted = true; }}
       autoPlay
       muted
       loop
