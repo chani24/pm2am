@@ -1,16 +1,16 @@
-"use client";
+import Image from "next/image";
 
 export default function HeroVideo() {
   return (
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      poster="/new-hero.png"
-      className="absolute inset-0 w-full h-full object-cover object-center"
-    >
-      <source src="/hero-bg.mp4" type="video/mp4" />
-    </video>
+    <div className="hero_video" aria-hidden="true">
+      <Image
+        src="/new-hero.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="hero_video_poster"
+      />
+    </div>
   );
 }

@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import "./gallery.css";
 import Image from "next/image";
 
+const IG_PROFILE = "https://www.instagram.com/pm2amofficial_/";
+
 const gallery = [
-  // Row 1 — wide left, narrow right
   {
     image: "two-djs.jpg",
     span: "2",
@@ -12,18 +13,7 @@ const gallery = [
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink: "https://www.instagram.com/p/DWwqgNIDOcN/",
-    buttonText: "VIEW MORE",
   },
-  {
-    image: "hot-bodies.png",
-    span: "1",
-    eventImage: "hot-body-2.jpeg",
-    venue: "VODA BEACH CLUB",
-    location: "LAGOS",
-    buttonLink: "https://tix.africa/discover/pm2am-hot-body",
-    buttonText: "BUY TICKETS",
-  },
-  // Row 2 — narrow left, wide right
   {
     image: "artiste-performing.jpg",
     span: "1",
@@ -31,18 +21,15 @@ const gallery = [
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink: "https://www.instagram.com/p/DWwqgNIDOcN/",
-    buttonText: "VIEW MORE",
   },
   {
     image: "day-shift-party.jpeg",
-    span: "2",
+    span: "1",
     eventImage: "carnival-ii.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
-    buttonText: "VIEW MORE",
   },
-  // Row 3 — wide left, narrow right
   {
     image: "3-girls.jpeg",
     span: "2",
@@ -50,16 +37,30 @@ const gallery = [
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
     buttonLink: "https://www.instagram.com/p/DSpwWGCjEbt/",
-    buttonText: "VIEW MORE",
   },
   {
-    image: "2-girls.jpg",
+    image: "two-dancing.jpg",
     span: "1",
-    eventImage: "hot-body-2.jpeg",
+    eventImage: "bullet-party.png",
+    venue: "PRAIA LAGOS",
+    location: "V.I LAGOS",
+    buttonLink: IG_PROFILE,
+  },
+  {
+    image: "girl-hands-up.jpeg",
+    span: "1",
+    eventImage: "bullet-party.png",
+    venue: "PRAIA LAGOS",
+    location: "V.I LAGOS",
+    buttonLink: IG_PROFILE,
+  },
+  {
+    image: "girl-in-brazil.jpg",
+    span: "1",
+    eventImage: "carnival-ii.png",
     venue: "VODA BEACH CLUB",
     location: "LAGOS",
-    buttonLink: "https://tix.africa/discover/pm2am-hot-body",
-    buttonText: "BUY TICKETS",
+    buttonLink: IG_PROFILE,
   },
 ];
 
@@ -110,14 +111,8 @@ export default function Gallery() {
                   <span className="light">LOCATION</span>
                   <span>{item.location}</span>
                 </div>
-                <a
-                  target="_blank"
-                  href={
-                    item.buttonLink ||
-                    "https://www.instagram.com/pm2amofficial_/"
-                  }
-                >
-                  <button>{item.buttonText}</button>
+                <a target="_blank" rel="noopener noreferrer" href={item.buttonLink}>
+                  <button>VIEW MORE</button>
                 </a>
               </div>
             </div>

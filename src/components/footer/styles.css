@@ -112,3 +112,20 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .footer {
+    margin-top: 124px;
+
+    .logo {
+      margin-bottom: 124px;
+
+      img {
+        width: 420px;
+        max-width: 420px;
+        left: 50%;
+        top: -124px;
+      }
+    }
+  }
+}

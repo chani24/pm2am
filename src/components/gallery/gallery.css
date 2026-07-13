@@ -33,12 +33,18 @@
     button {
       text-align: center;
       width: 100%;
-      border-radius: 2px;
       color: #fff;
-      background-color: black;
-      height: 32px;
-      font-size: 13px;
-      font-size: 600;
+      background-color: var(--accent);
+      border: 1px solid var(--accent);
+      height: 40px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      &:hover {
+        background-color: var(--accent-bright);
+        border-color: var(--accent-bright);
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { currentEvent } from "@/config/event";
 
 type ModalFormProps = {
   isOpen: boolean;
@@ -11,17 +12,7 @@ type ModalFormProps = {
   rejoinUrl?: string; // URL to re-subscribe; replace '#' with real link
 };
 
-type Event = {
-  name: string;
-  url: string;
-};
-
-const events: Event[] = [
-  {
-    name: "HOT BODY SUMMER",
-    url: "https://tix.africa/discover/pm2am-hot-body",
-  },
-];
+const events = [{ name: currentEvent.name, url: currentEvent.link }];
 
 export default function ModalForm({
   isOpen,
@@ -86,7 +77,7 @@ export default function ModalForm({
               >
                 <button
                   type="button"
-                  className="w-full px-10 py-5 border border-white text-white hover:bg-white hover:text-black transition"
+                  className="w-full px-10 py-5 border border-white text-white hover:bg-[var(--accent-bright)] hover:border-[var(--accent-bright)] transition"
                 >
                   {event.name}
                 </button>

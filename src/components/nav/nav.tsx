@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "./styles.css";
+import { currentEvent, pastEvents } from "@/config/event";
 const links = [
   {
     name: "instagram",
@@ -56,25 +57,27 @@ export default function Nav(props: { fixed?: boolean }) {
         </Link>
         <div>
           <div className="pc_links inter">
-            <div>
-              <p className="mb-2 font-bold">EVENTS</p>
-              <div className="font-semibold flex flex-col gap-1">
+            <div className="nav_item">
+              <span className="nav_trigger">EVENTS</span>
+              <div className="nav_dropdown">
                 <div className="flex gap-2 items-center">
                   <a
-                    href="https://tix.africa/discover/pm2am-hot-body"
+                    href={currentEvent.link}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    HOT BODY SUMMER
+                    {currentEvent.shortName}
                   </a>
                   <div className="new">NEW</div>
                 </div>
-                <p>PM2AM: FOR THE REAL PARTIERS</p>
-                <p>PM2AM: THE ANNIVERSARY</p>
+                {pastEvents.map((name) => (
+                  <p key={name}>{name}</p>
+                ))}
               </div>
             </div>
-            <div>
-              <p className="mb-2 font-bold">MERCH</p>
-              <div className="font-semibold flex flex-col gap-1">
+            <div className="nav_item">
+              <span className="nav_trigger">MERCH</span>
+              <div className="nav_dropdown">
                 <div className="flex gap-2 items-center">
                   <a
                     href="https://shop.mavinrecords.com/product/hot-body-bikini/"
@@ -86,20 +89,10 @@ export default function Nav(props: { fixed?: boolean }) {
                 </div>
               </div>
             </div>
-            <div>
-              <p className="mb-2 font-bold">CONTACT US</p>
-              <div className="font-semibold">
-                <div>
-                  <p>PM2AM GANG</p>
-                  <a
-                    className="underline"
-                    target="_blank"
-                    href="mailto:pm2amgang@gmail.com"
-                  >
-                    GET IN TOUCH
-                  </a>
-                </div>
-              </div>
+            <div className="nav_item">
+              <a className="nav_trigger" target="_blank" href="mailto:pm2amgang@gmail.com">
+                CONTACT
+              </a>
             </div>
           </div>
           <div className={"mobile_links"}>
@@ -144,15 +137,17 @@ export default function Nav(props: { fixed?: boolean }) {
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
             <div className="flex gap-2 items-center justify-center">
               <a
-                href="https://tix.africa/discover/pm2am-hot-body"
+                href={currentEvent.link}
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                HOT BODY SUMMER
+                {currentEvent.shortName}
               </a>
               <div className="new">NEW</div>
             </div>
-            <p className="text-[#C2C2C2]">PM2AM: FOR THE REAL PARTIERS</p>
-            <p className="text-[#C2C2C2]">PM2AM: THE ANNIVERSARY</p>
+            {pastEvents.map((name) => (
+              <p key={name} className="text-[#C2C2C2]">{name}</p>
+            ))}
           </div>
         </div>
         <div className="nav_footer">
