@@ -5,12 +5,12 @@
 export const currentEvent = {
   name: "PM2AM WITH SMALLZTHEDJ",
   shortName: "WITH SMALLZTHEDJ",
-  dateLabel: "01.AUG.26",
-  fullDate: "SAT, AUG 1, 2026",
-  venue: "CASA 45",
-  location: "V.I LAGOS",
-  link: "https://faaji.app/party/6a4dfdc5d305d1001528c504",
-  poster: "/casa-45.png",
+  dateLabel: "15.AUG.26",
+  fullDate: "SAT, AUG 15, 2026",
+  venue: "EGG",
+  location: "LONDON",
+  link: "https://www.eventbrite.com/e/pm2am-with-smallzthedj-tickets-1987649198258?aff=pm2am",
+  poster: "/pm2amsmalls.jpeg",
 };
 
 // Past events shown (as plain text, not links) in the nav's EVENTS dropdown.
