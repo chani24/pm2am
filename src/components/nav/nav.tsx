@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "./styles.css";
-import { currentEvent, pastEvents } from "@/config/event";
+import { currentEvents, pastEvents } from "@/config/event";
 const links = [
   {
     name: "instagram",
@@ -60,16 +60,14 @@ export default function Nav(props: { fixed?: boolean }) {
             <div className="nav_item">
               <span className="nav_trigger">EVENTS</span>
               <div className="nav_dropdown">
-                <div className="flex gap-2 items-center">
-                  <a
-                    href={currentEvent.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {currentEvent.shortName}
-                  </a>
-                  <div className="new">NEW</div>
-                </div>
+                {currentEvents.map((event) => (
+                  <div key={event.link} className="flex gap-2 items-center">
+                    <a href={event.link} target="_blank" rel="noopener noreferrer">
+                      {event.shortName}
+                    </a>
+                    <div className="new">NEW</div>
+                  </div>
+                ))}
                 {pastEvents.map((name) => (
                   <p key={name}>{name}</p>
                 ))}
@@ -135,16 +133,14 @@ export default function Nav(props: { fixed?: boolean }) {
         <div className="text-center">
           <p className="mb-5 text-2xl font-black">EVENTS</p>
           <div className="font-sm font-semibold flex flex-col gap-2 items-center">
-            <div className="flex gap-2 items-center justify-center">
-              <a
-                href={currentEvent.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {currentEvent.shortName}
-              </a>
-              <div className="new">NEW</div>
-            </div>
+            {currentEvents.map((event) => (
+              <div key={event.link} className="flex gap-2 items-center justify-center">
+                <a href={event.link} target="_blank" rel="noopener noreferrer">
+                  {event.shortName}
+                </a>
+                <div className="new">NEW</div>
+              </div>
+            ))}
             {pastEvents.map((name) => (
               <p key={name} className="text-[#C2C2C2]">{name}</p>
             ))}

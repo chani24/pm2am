@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { currentEvent } from "@/config/event";
+import { currentEvents } from "@/config/event";
 
 type ModalFormProps = {
   isOpen: boolean;
@@ -12,7 +12,7 @@ type ModalFormProps = {
   rejoinUrl?: string; // URL to re-subscribe; replace '#' with real link
 };
 
-const events = [{ name: currentEvent.name, url: currentEvent.link }];
+const events = currentEvents.map((event) => ({ name: event.name, url: event.link }));
 
 export default function ModalForm({
   isOpen,

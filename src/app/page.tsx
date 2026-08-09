@@ -9,7 +9,9 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import TicketsModal from "@/components/ticketsModal/TicketsModal";
 import HeroVideo from "@/components/HeroVideo";
-import { currentEvent } from "@/config/event";
+import { currentEvents } from "@/config/event";
+
+const [currentEvent, ...otherEvents] = currentEvents;
 
 const Gallery = dynamic(() => import("@/components/gallery/gallery"), { ssr: false });
 
@@ -65,7 +67,7 @@ export default function Home() {
   }, [isPaused]);
 
   useEffect(() => {
-    const eventDate = new Date("2026-08-01T00:00:00+01:00");
+    const eventDate = new Date(currentEvent.isoDate);
     const calc = () => {
       const diff = eventDate.getTime() - Date.now();
       const remaining = Math.max(0, diff);
@@ -132,10 +134,10 @@ export default function Home() {
               >
                 <div ref={slider} className="marquee">
                   <p ref={firstText}>
-                    PM2AM PRESENTS: {currentEvent.name} / {currentEvent.dateLabel} @ {currentEvent.venue}
+                    {currentEvents.map((event) => `PM2AM PRESENTS: ${event.name} / ${event.dateLabel} @ ${event.venue}`).join("   •   ")}
                   </p>
                   <p ref={secondText}>
-                    PM2AM PRESENTS: {currentEvent.name} / {currentEvent.dateLabel} @ {currentEvent.venue}
+                    {currentEvents.map((event) => `PM2AM PRESENTS: ${event.name} / ${event.dateLabel} @ ${event.venue}`).join("   •   ")}
                   </p>
                 </div>
               </div>
@@ -152,13 +154,12 @@ export default function Home() {
                 </a>
               </h2>
               <p className="event_copy inter">
-                PM2AM with SmallztheDJ at Casa 45, Victoria Island. Tickets
-                and event details are available on Faaji.
+                {currentEvent.description}
               </p>
               <div className="event_flyer event_flyer_mobile">
                 <Image
                   src={currentEvent.poster}
-                  alt="PM2AM with SmallztheDJ at Casa 45"
+                  alt={currentEvent.name}
                   fill
                   className="object-cover"
                   sizes="100vw"
@@ -210,7 +211,7 @@ export default function Home() {
               <div className="event_flyer">
                 <Image
                   src={currentEvent.poster}
-                  alt="PM2AM with SmallztheDJ at Casa 45"
+                  alt={currentEvent.name}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 420px"
@@ -219,6 +220,41 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {otherEvents.length > 0 && (
+          <section className="also_live_section">
+            <div className="also_live_inner">
+              <p className="also_live_label inter">MORE DATES</p>
+              <div className="also_live_list">
+                {otherEvents.map((event) => (
+                  <a
+                    key={event.link}
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="also_live_card"
+                  >
+                    <div className="also_live_thumb">
+                      <Image
+                        src={event.poster}
+                        alt={event.name}
+                        fill
+                        className="object-cover"
+                        sizes="96px"
+                      />
+                    </div>
+                    <div className="also_live_info">
+                      <h3 className="monument">{event.name}</h3>
+                      <p className="inter">
+                        {event.fullDate} · {event.venue}, {event.location}
+                      </p>
+                    </div>
+                    <span className="also_live_cta inter monument">GET TICKETS</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
         <section className="merch_outer" id="merch">
           <div className="section_header">
             <span className="section_label inter">SHOP THE DROP</span>
