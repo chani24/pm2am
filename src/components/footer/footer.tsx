@@ -25,7 +25,7 @@ const links = [
   },
   {
     name: "whatsapp",
-    link: "https://chat.whatsapp.com/D4Uww3fQ5hXK1yhQ383Szt",
+    link: "https://chat.whatsapp.com/GzJaIv9HJUE5KHhuQKcnKf?s=cl&p=i&ilr=0&amv=2",
     width: 25,
     height: 24,
   },
@@ -140,7 +140,16 @@ export default function Footer() {
               );
             })}
           </div>
-          <p className="text-center inter" style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", color: "#666", marginTop: 32 }}>
+          <p
+            className="text-center inter"
+            style={{
+              fontSize: 11,
+              fontWeight: 600,
+              letterSpacing: "0.12em",
+              color: "#666",
+              marginTop: 32,
+            }}
+          >
             ©2026 PM2AM® ALL RIGHTS RESERVED
           </p>
         </div>

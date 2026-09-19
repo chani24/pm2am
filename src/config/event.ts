@@ -26,30 +26,17 @@ export type PromotedEvent = {
 
 export const currentEvents: PromotedEvent[] = [
   {
-    name: "PM2AM VICE CITY",
-    shortName: "VICE CITY",
-    dateLabel: "05.SEP.26",
-    fullDate: "SAT, SEP 5, 2026",
-    isoDate: "2026-09-05T00:00:00+01:00",
+    name: "ALL WHITE WITH DJ ROSCO",
+    shortName: "DJ ROSCO",
+    dateLabel: "03.OCT.26",
+    fullDate: "SAT, OCT 3, 2026",
+    isoDate: "2026-10-03T00:00:00+01:00",
     venue: "CASA 45",
     location: "LAGOS",
-    link: "https://tix.africa/discover/pm2am-vice-city",
-    poster: "/vice-city-poster.jpg",
+    link: "https://tix.africa/discover/pm2am-with-rosco-all-white-affair",
+    poster: "/rosco.png",
     description:
-      "PM2AM Vice City at Casa 45, Adeola Odeku, Victoria Island. Tickets and event details are available on Tix Africa.",
-  },
-  {
-    name: "PM2AM WITH SMALLZTHEDJ",
-    shortName: "WITH SMALLZTHEDJ",
-    dateLabel: "15.AUG.26",
-    fullDate: "SAT, AUG 15, 2026",
-    isoDate: "2026-08-15T00:00:00+01:00",
-    venue: "EGG",
-    location: "LONDON",
-    link: "https://www.eventbrite.com/e/pm2am-with-smallzthedj-tickets-1987649198258?aff=pm2am",
-    poster: "/pm2amsmalls.jpeg",
-    description:
-      "PM2AM with SmallztheDJ takes over EGG London for one night only. Tickets and event details are available on Eventbrite.",
+      "PM2AM with DJ Rosco at Casa 45, Adeola Odeku, Victoria Island. Tickets and event details are available on Tix Africa.",
   },
 ];
 
@@ -58,4 +45,8 @@ export const currentEvents: PromotedEvent[] = [
 export const currentEvent = currentEvents[0];
 
 // Past events shown (as plain text, not links) in the nav's EVENTS dropdown.
-export const pastEvents = ["FOR THE REAL PARTIERS", "THE ANNIVERSARY"];
+export const pastEvents = [
+  "PM2AM VICE CITY",
+  "FOR THE REAL PARTIERS",
+  "THE ANNIVERSARY",
+];
