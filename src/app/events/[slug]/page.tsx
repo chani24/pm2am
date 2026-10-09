@@ -41,7 +41,16 @@ export default async function EventPage({ params }: Params) {
       <Nav />
       <main className="ev">
         <section className="ev_hero">
-          <Image src={event.image} alt="" fill priority sizes="100vw" className="ev_hero_img" />
+          {/* A poster used as the banner is blurred into a backdrop so its own text
+              doesn't clash with the title; the sharp poster sits in the body. */}
+          <Image
+            src={event.image}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className={`ev_hero_img ${event.image === event.flyer ? "ev_hero_img--poster" : ""}`}
+          />
           <div className="hero_shade" aria-hidden="true" />
           <div className="wrap ev_hero_inner">
             <Link href="/#events" className="link-arrow">← All nights</Link>

@@ -66,7 +66,7 @@ export const events: PartyEvent[] = [
     venue: "Casa 45",
     city: "Lagos",
     ticketLink: "https://tix.africa/discover/pm2amhalloween",
-    image: "/media/gallery/vice-city/vice-city-dj-hands-up.jpg",
+    image: "/halloween-flyer.png",
     flyer: "/halloween-flyer.png",
     intro:
       "This Halloween, PM2AM takes over Casa 45 for a night where mystery, music and nightlife collide.",
@@ -211,6 +211,8 @@ export const sets: DjSet[] = [
   { id: "cjml6_VoFhc", dj: "DJ Bonamax", title: "PM2AM x DJ Bonamax" },
   { id: "tdC8RBsLWHg", dj: "DJ Yanfssss", title: "Anniversary Set" },
   { id: "WIqWhVy2DYY", dj: "DJ Tobi Peter", title: "Anniversary — Live" },
+  { id: "BKDqN_nvTQU", dj: "DJ Farati", title: "No Love in Lagos — Full Set" },
+  { id: "sF4UpVqnO5E", dj: "DJ Rola", title: "PM2AM x DJ Rola" },
 ];
 
 
@@ -223,7 +225,7 @@ export const heroSlides: string[] = media.heroImages.map((i) => i.src);
 const recapEventsNewestFirst = [
   "All White with DJ Rosco",
   "Vice City",
-  "PM2AM with DJ Smalls",
+  "PM2AM with SmallztheDJ",
   "Hot Body Summer",
   "Beach Carnival",
 ];
