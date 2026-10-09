@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         hostname: "img.youtube.com",
         pathname: "/vi/**",
       },
+      {
+        protocol: "https",
+        hostname: "dodptt9f4zk9h.cloudfront.net",
+        pathname: "/stores/240450/**",
+      },
     ],
   },
   async headers() {

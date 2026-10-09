@@ -1,44 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
+import Nav from "@/components/site/Nav";
 
 export default function NotFound() {
   return (
-    <main className="not_found monument">
-      <div className="not_found_media" aria-hidden="true">
-        <Image
-          src="/new-hero.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-        />
-      </div>
-      <div className="not_found_overlay" aria-hidden="true" />
-
-      <nav className="not_found_nav">
-        <Link href="/" aria-label="Go to PM2AM home">
-          <Image
-            src="/logo-new.svg"
-            alt="PM2AM"
-            width={132}
-            height={40}
-            priority
-          />
-        </Link>
-      </nav>
-
-      <section className="not_found_content">
-        <p className="not_found_kicker inter">Page not found</p>
-        <h1 className="not_found_code rubik">404</h1>
-        <h2 className="not_found_title">This page is not on the list.</h2>
-        <p className="not_found_copy inter">
-          The link may have moved or expired. Head back home for PM2AM events,
-          merch, and recaps.
-        </p>
-        <Link href="/" className="not_found_btn inter">
-          Back Home
-        </Link>
-      </section>
-    </main>
+    <>
+      <Nav />
+      <main className="hero">
+        <div className="hero_media" aria-hidden="true">
+          <Image src="/media/hero/03-disco-ball-crowd.jpg" alt="" fill priority sizes="100vw" style={{ objectFit: "cover" }} />
+        </div>
+        <div className="hero_shade" aria-hidden="true" />
+        <div className="hero_inner">
+          <p className="shead_time"><span className="shead_dot" />404 · Page not found</p>
+          <h1 className="hero_title display">
+            <span className="hero_line">Wrong</span>
+            <span className="hero_line hero_line--outline">Room</span>
+          </h1>
+          <div className="hero_ctas">
+            <Link href="/" className="btn btn--solid btn--lg">Back to the party</Link>
+          </div>
+        </div>
+      </main>
+    </>
   );
 }

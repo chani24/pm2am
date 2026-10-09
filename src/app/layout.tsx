@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Inter, Praise, Rubik_Glitch } from "next/font/google";
+import { Inter, Sedgwick_Ave_Display, Space_Mono } from "next/font/google";
+import SmoothScroll from "@/components/site/SmoothScroll";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,19 +10,21 @@ const inter = Inter({
   display: "swap",
 });
 
-const praise = Praise({
+// Footer link style.
+const spaceMono = Space_Mono({
   subsets: ["latin"],
-  variable: "--font-praise",
+  variable: "--font-mono",
+  display: "swap",
+  weight: ["400", "700"],
+});
+
+// Graffiti handstyle used for accent words — echoes the drippy logo.
+const graffiti = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  variable: "--font-graffiti",
   display: "swap",
   weight: "400",
 });
-
-const rubikGlitch = Rubik_Glitch({
-  subsets: ["latin"],
-  variable: "--font-rubik",
-  display: "swap",
-  weight: "400"
-})
 
 const monumentBlack = localFont({
   src: "./fonts/PPMonument/PPMonumentExtended-Black.otf",
@@ -42,6 +45,8 @@ const monumentLight = localFont({
 });
 
 export const metadata: Metadata = {
+  // Resolves relative share images (e.g. event flyers) to absolute URLs.
+  metadataBase: new URL("https://pm2amgang.com"),
   title: "PM2AM - FOR THE REAL PARTIERS",
   description:
     "Explore unforgettable party adventures with PM2AM. From beach carnivals to Halloween specials, we bring you the ultimate Lagos nightlife experience. Get in touch at PM2AMGANG@gmail.com or visit https://pm2amgang.com.",
@@ -101,10 +106,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${monument.variable} ${monumentLight.variable} ${monumentBlack.variable} ${praise.variable} ${inter.variable} ${rubikGlitch.variable} antialiased`}
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning
+        className={`${monument.variable} ${monumentLight.variable} ${monumentBlack.variable} ${inter.variable} ${graffiti.variable} ${spaceMono.variable} antialiased`}
       >
+        <SmoothScroll />
+        <div className="grain" aria-hidden="true" />
         {children}
       </body>
     </html>

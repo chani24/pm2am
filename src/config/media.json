@@ -1,0 +1,120 @@
+{
+  "heroVideos": [
+    {
+      "src": "/media/hero/hero-reel.mp4",
+      "small": "/media/hero/hero-reel-sm.mp4",
+      "poster": "/media/hero/hero-reel-poster.jpg",
+      "width": 720,
+      "height": 960
+    }
+  ],
+  "heroImages": [
+    {
+      "src": "/media/hero/01-stage-lights-crowd.jpg",
+      "width": 2400,
+      "height": 1600
+    },
+    {
+      "src": "/media/hero/02-purple-crowd-screens.jpg",
+      "width": 2400,
+      "height": 1600
+    },
+    {
+      "src": "/media/hero/03-disco-ball-crowd.jpg",
+      "width": 1080,
+      "height": 720
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/media/gallery/all-white-with-dj-rosco/all-white-crowd-green-light.jpg",
+      "width": 1080,
+      "height": 1620,
+      "event": "All White with DJ Rosco"
+    },
+    {
+      "src": "/media/gallery/all-white-with-dj-rosco/all-white-dancefloor.jpg",
+      "width": 1080,
+      "height": 1620,
+      "event": "All White with DJ Rosco"
+    },
+    {
+      "src": "/media/gallery/all-white-with-dj-rosco/all-white-dj-booth.jpg",
+      "width": 1080,
+      "height": 1620,
+      "event": "All White with DJ Rosco"
+    },
+    {
+      "src": "/media/gallery/all-white-with-dj-rosco/all-white-mc-on-mic.jpg",
+      "width": 1080,
+      "height": 1620,
+      "event": "All White with DJ Rosco"
+    },
+    {
+      "src": "/media/gallery/beach-carnival/beach-carnival-three-friends.jpg",
+      "width": 1600,
+      "height": 1087,
+      "event": "Beach Carnival"
+    },
+    {
+      "src": "/media/gallery/beach-carnival/beach-carnival-two-friends.jpg",
+      "width": 640,
+      "height": 800,
+      "event": "Beach Carnival"
+    },
+    {
+      "src": "/media/gallery/hot-body-summer/hot-body-dancers.jpg",
+      "width": 2400,
+      "height": 1351,
+      "event": "Hot Body Summer"
+    },
+    {
+      "src": "/media/gallery/hot-body-summer/hot-body-dancing-crowd.jpg",
+      "width": 2400,
+      "height": 1351,
+      "event": "Hot Body Summer"
+    },
+    {
+      "src": "/media/gallery/hot-body-summer/hot-body-guy-with-hands-up.jpg",
+      "width": 1800,
+      "height": 2400,
+      "event": "Hot Body Summer"
+    },
+    {
+      "src": "/media/gallery/hot-body-summer/hot-body-poolside-friends.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "Hot Body Summer"
+    },
+    {
+      "src": "/media/gallery/pm2am-with-dj-smalls/smalls-crowd-purple-lights.jpg",
+      "width": 1080,
+      "height": 720,
+      "event": "PM2AM with DJ Smalls"
+    },
+    {
+      "src": "/media/gallery/pm2am-with-dj-smalls/smalls-dancing-arm-up.jpg",
+      "width": 1800,
+      "height": 2400,
+      "event": "PM2AM with DJ Smalls"
+    },
+    {
+      "src": "/media/gallery/pm2am-with-dj-smalls/smalls-smoke-portrait.jpg",
+      "width": 1800,
+      "height": 2400,
+      "event": "PM2AM with DJ Smalls"
+    },
+    {
+      "src": "/media/gallery/vice-city/vice-city-certified-real-partiers.jpg",
+      "width": 2400,
+      "height": 1600,
+      "event": "Vice City"
+    },
+    {
+      "src": "/media/gallery/vice-city/vice-city-dj-hands-up.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "Vice City"
+    }
+  ]
+}
