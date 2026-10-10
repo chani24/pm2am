@@ -100,7 +100,7 @@ export default async function EventPage({ params }: Params) {
 
         {others.length > 0 && (
           <section className="wrap ev_others">
-            <p className="shead_time"><span className="shead_dot" />Other nights</p>
+            <p className="shead_time">Other nights</p>
             <ul>
               {others.map((o) => (
                 <li key={o.slug}>

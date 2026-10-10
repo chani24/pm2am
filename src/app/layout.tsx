@@ -78,9 +78,9 @@ export const metadata: Metadata = {
     siteName: "PM2AM",
     images: [
       {
-        url: "https://pm2amgang.com/og-image.png",
+        url: "https://pm2amgang.com/og-image-2026.jpg",
         width: 1200,
-        height: 679,
+        height: 630,
         alt: "PM2AM - For the Real Partiers",
       },
     ],
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PM2AM",
     description: "FOR THE REAL PARTIERS",
-    images: ["https://pm2amgang.com/og-image.png"],
+    images: ["https://pm2amgang.com/og-image-2026.jpg"],
     creator: "@pm2am_",
   },
   robots: {

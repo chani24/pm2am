@@ -245,7 +245,6 @@ html.menu-lock body { overflow: hidden; }
   color: var(--accent-soft);
   margin-bottom: 14px;
 }
-.shead_dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sunrise); }
 .shead_title { font-size: clamp(32px, 5vw, 76px); }
 .shead_title .tag { font-size: 1.65em; vertical-align: -0.12em; line-height: 0.8; }
 .shead_aside { color: var(--dim); }

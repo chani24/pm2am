@@ -12,7 +12,7 @@ export default function NotFound() {
         </div>
         <div className="hero_shade" aria-hidden="true" />
         <div className="hero_inner">
-          <p className="shead_time"><span className="shead_dot" />404 · Page not found</p>
+          <p className="shead_time">404 · Page not found</p>
           <h1 className="hero_title display">
             <span className="hero_line">Wrong</span>
             <span className="hero_line hero_line--outline">Room</span>
