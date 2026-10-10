@@ -50,26 +50,6 @@ export const metadata: Metadata = {
   title: "PM2AM — For the real partiers",
   description:
       "PM2AM is a Lagos party culture: Afrobeats, Amapiano and Afro House nights at Casa 45, Voda Beach Club and beyond. Tickets, tables, merch and recaps — for the real partiers.",
-  keywords: [
-    "PM2AM",
-    "PM2AM gang",
-    "Real partiers",
-    "Lagos nightlife",
-    "Palmwine and friends",
-    "Weekend Parties Lagos",
-    "Nightlife",
-    "Chibbyverse",
-    "Outside",
-    "Best parties",
-    "Lagos events",
-    "Even in the day",
-    "Nativeland",
-    "Premium Nightlife Spots",
-    "Outsiders",
-    "Detty December",
-    "December Activities",
-    "Lagos Nightclubs",
-  ],
   openGraph: {
     title: "PM2AM — For the real partiers",
     description:
@@ -93,10 +73,6 @@ export const metadata: Metadata = {
     description: "FOR THE REAL PARTIERS",
     images: ["https://pm2amgang.com/og-image-2026.jpg"],
     creator: "@pm2am_",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
