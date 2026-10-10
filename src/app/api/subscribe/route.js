@@ -1,72 +1,46 @@
-import mailchimp from "@mailchimp/mailchimp_marketing";
-import crypto from "crypto";
+// Newsletter signup → Brevo contact list.
+// Needs BREVO_API_KEY and BREVO_LIST_ID in the environment (.env locally,
+// project settings on the host).
+const BREVO_CONTACTS_URL = "https://api.brevo.com/v3/contacts";
 
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_SERVER,
-});
+const json = (body, status) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { "Content-Type": "application/json" },
+  });
 
 export async function POST(req) {
-  const { firstName, email, tag } = await req.json();
+  const { firstName, email } = await req.json();
+
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return json({ message: "A valid email is required" }, 400);
+  }
 
   try {
-    if (!email) {
-      return new Response(JSON.stringify({ message: "Email is required" }), {
-        status: 400,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
-    const listId = process.env.MAILCHIMP_AUDIENCE_ID;
-    const subscriberHash = crypto
-      .createHash("md5")
-      .update(email.toLowerCase())
-      .digest("hex");
-
-    await mailchimp.lists.setListMember(
-      listId,
-      subscriberHash,
-      {
-        email_address: email,
-        status_if_new: "subscribed",
-        status: "subscribed",
-        merge_fields: {
-          FNAME: firstName,
-        },
-      }
-    );
-
-    // Optional single tag
-    const tagList = typeof tag === "string" && tag.trim() ? [tag.trim()] : [];
-
-    if (tagList.length > 0) {
-      await mailchimp.lists.updateListMemberTags(
-        listId,
-        subscriberHash,
-        {
-          tags: tagList.map((name) => ({ name, status: "active" })),
-        }
-      );
-    }
-
-    return new Response(
-      JSON.stringify({
-        message: "Subscription successful",
-        tagsApplied: tagList,
+    const res = await fetch(BREVO_CONTACTS_URL, {
+      method: "POST",
+      headers: {
+        "api-key": process.env.BREVO_API_KEY ?? "",
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        email: email.trim().toLowerCase(),
+        attributes: firstName ? { FIRSTNAME: firstName.trim() } : undefined,
+        listIds: [Number(process.env.BREVO_LIST_ID)],
+        // Someone already in Brevo just gets added to the list instead of erroring.
+        updateEnabled: true,
       }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    });
+
+    // 201 = new contact, 204 = existing contact updated.
+    if (res.ok) return json({ message: "Subscription successful" }, 200);
+
+    const detail = await res.json().catch(() => ({}));
+    console.error("Brevo subscribe failed:", res.status, detail.code, detail.message);
+    return json({ message: "Subscription failed" }, 500);
   } catch (error) {
-    console.error("Mailchimp subscribe failed:", error?.status, error?.response?.body?.title ?? error?.message);
-    return new Response(
-      JSON.stringify({ message: "Subscription failed" }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    console.error("Brevo subscribe failed:", error?.message);
+    return json({ message: "Subscription failed" }, 500);
   }
 }
