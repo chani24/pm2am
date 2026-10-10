@@ -65,8 +65,8 @@ export default async function EventPage({ params }: Params) {
               <div><dt>Venue</dt><dd>{event.venue}, {event.city}</dd></div>
             </dl>
             <div className="hero_ctas">
-              <a href={event.ticketLink} target="_blank" rel="noopener noreferrer" className="btn btn--solid btn--lg">Buy Tickets</a>
-              <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost btn--lg">Book a Table</a>
+              <a href={event.ticketLink} target="_blank" rel="noopener noreferrer" className="btn btn--solid">Buy Tickets</a>
+              <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">Book a Table</a>
             </div>
           </div>
         </section>

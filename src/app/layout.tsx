@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Inter, Sedgwick_Ave_Display, Space_Mono } from "next/font/google";
@@ -47,9 +47,9 @@ const monumentLight = localFont({
 export const metadata: Metadata = {
   // Resolves relative share images (e.g. event flyers) to absolute URLs.
   metadataBase: new URL("https://pm2amgang.com"),
-  title: "PM2AM - FOR THE REAL PARTIERS",
+  title: "PM2AM — For the real partiers",
   description:
-    "Explore unforgettable party adventures with PM2AM. From beach carnivals to Halloween specials, we bring you the ultimate Lagos nightlife experience. Get in touch at PM2AMGANG@gmail.com or visit https://pm2amgang.com.",
+      "PM2AM is a Lagos party culture: Afrobeats, Amapiano and Afro House nights at Casa 45, Voda Beach Club and beyond. Tickets, tables, merch and recaps — for the real partiers.",
   keywords: [
     "PM2AM",
     "PM2AM gang",
@@ -71,9 +71,9 @@ export const metadata: Metadata = {
     "Lagos Nightclubs",
   ],
   openGraph: {
-    title: "PM2AM - FOR THE REAL PARTIERS",
+    title: "PM2AM — For the real partiers",
     description:
-      "Explore unforgettable party adventures with PM2AM. From beach carnivals to Halloween specials, we bring you the ultimate Lagos nightlife experience. Get in touch at PM2AMGANG@gmail.com or visit https://pm2amgang.com.",
+      "PM2AM is a Lagos party culture: Afrobeats, Amapiano and Afro House nights at Casa 45, Voda Beach Club and beyond. Tickets, tables, merch and recaps — for the real partiers.",
     url: "https://pm2amgang.com",
     siteName: "PM2AM",
     images: [
@@ -99,6 +99,9 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
+
+// Tints the phone browser bar to match the site.
+export const viewport: Viewport = { themeColor: "#07040b" };
 
 export default function RootLayout({
   children,

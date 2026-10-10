@@ -148,7 +148,7 @@ export const events: PartyEvent[] = [
     venue: "Casa 45",
     city: "Lagos",
     ticketLink: "https://tix.africa/discover/pm2am-the-finale",
-    image: "/media/hero/02-purple-crowd-screens.jpg",
+    image: "/media/hero/01-stage-lights-crowd.jpg",
     intro: "One last dance. One final shutdown.",
     body: [
       "December has been a movie. Now it’s time for the final scene.",
