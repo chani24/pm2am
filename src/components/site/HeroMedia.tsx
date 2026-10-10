@@ -2,16 +2,22 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import type { HeroVideo } from "@/config/site";
+import type { HeroSlide, HeroVideo } from "@/config/site";
 
-type Props = { video?: HeroVideo; slides: string[] };
+type Props = { video?: HeroVideo; slides: HeroSlide[] };
 
 // Plays the hero video when the browser allows it; otherwise (iPhone Low Power
 // Mode, data saver, reduced motion, or no video yet) falls back to the photo
 // slideshow so the hero is never a frozen frame with a play button.
-// Portrait clips only play on portrait screens — stretched across a laptop
-// they'd be blown up and cropped to a blurry strip.
-export default function HeroMedia({ video, slides }: Props) {
+// Portrait clips (and portrait photos) only show on portrait screens —
+// stretched across a laptop they'd be blown up and cropped to a blurry strip.
+export default function HeroMedia({ video, slides: allSlides }: Props) {
+  // Until we know the screen shape (first client render), assume landscape.
+  const [landscape, setLandscape] = useState(true);
+  useEffect(() => setLandscape(window.innerWidth > window.innerHeight), []);
+  const fitting = allSlides.filter((s) => !landscape || s.width >= s.height);
+  const slides = (fitting.length ? fitting : allSlides).map((s) => s.src);
+
   const ref = useRef<HTMLVideoElement>(null);
   const [mode, setMode] = useState<"video" | "slides">(video ? "video" : "slides");
   const [src, setSrc] = useState<string>();
@@ -65,7 +71,7 @@ export default function HeroMedia({ video, slides }: Props) {
         />
       ) : (
         slides.map((s, i) => (
-          <div key={s} className={`hero_slide ${i === active ? "is-active" : ""}`}>
+          <div key={s} className={`hero_slide ${i === active % slides.length ? "is-active" : ""}`}>
             <Image src={s} alt="" fill priority={i === 0} sizes="100vw" />
           </div>
         ))

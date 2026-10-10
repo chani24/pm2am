@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { links, sets } from "@/config/site";
 import SectionHead from "./SectionHead";
 import { lockScroll } from "./SmoothScroll";
+import { CloseIcon } from "./Icons";
 
 export default function Sounds() {
   const [playing, setPlaying] = useState<number | null>(null);
@@ -60,8 +61,8 @@ export default function Sounds() {
               allowFullScreen
             />
           </div>
-          <button className="player_close" onClick={() => setPlaying(null)}>
-            Close ✕
+          <button className="player_close" onClick={() => setPlaying(null)} aria-label="Close">
+            <CloseIcon />
           </button>
         </div>
       )}

@@ -66,7 +66,16 @@ export default function Footer() {
                 {status === "sending" ? "Joining…" : status === "done" ? "You're in" : "Join the list"}
               </button>
             </div>
-            {status === "error" && <p className="footer_error">Something went wrong — try again.</p>}
+            {/* If the mailing list is unreachable, nobody who wants updates
+                should hit a dead end: point them at the WhatsApp community. */}
+            {status === "error" && (
+              <p className="footer_error">
+                Couldn&apos;t sign you up right now.{" "}
+                <a href={links.community} target="_blank" rel="noopener noreferrer">
+                  Join our WhatsApp community instead →
+                </a>
+              </p>
+            )}
           </form>
 
           <nav className="footer_links">

@@ -284,7 +284,15 @@ section { position: relative; }
   margin: 0 auto;
   padding: 110px var(--gutter) 28px;
 }
-.hero_title { display: block; font-size: clamp(64px, min(13vw, 17svh), 230px); line-height: 0.92; margin-bottom: clamp(24px, 4vw, 44px); }
+.hero_title { display: block; font-size: clamp(64px, min(13vw, 17svh), 230px); line-height: 0.92; margin-bottom: clamp(48px, 6.5vw, 96px); }
+/* Homepage hero: tone the photos/video down so the title stays the loudest
+   thing — an overall dim plus extra shade behind the left-aligned text. */
+.hero > .hero_shade {
+  background:
+    linear-gradient(90deg, rgba(7, 4, 11, 0.45) 0%, rgba(7, 4, 11, 0.1) 55%, transparent 80%),
+    linear-gradient(180deg, rgba(34, 7, 58, 0.5) 0%, rgba(7, 4, 11, 0.2) 40%, rgba(7, 4, 11, 0.9) 88%),
+    rgba(7, 4, 11, 0.1);
+}
 .hero_line { display: block; }
 .hero_line--outline { color: transparent; -webkit-text-stroke: 2px var(--white); }
 .hero_ctas { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -462,6 +470,45 @@ section { position: relative; }
 }
 .pcardx:hover .pcardx_play { transform: scale(1.1); background: var(--accent-bright); }
 
+/* Recap rotation: the incoming photo and caption fade in over the outgoing one. */
+.pcardx_in { animation: pcardx-in 0.9s ease both; }
+@keyframes pcardx-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* Recap photo viewer */
+.viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(7, 4, 11, 0.95);
+  display: grid;
+  place-items: center;
+  padding: 64px clamp(56px, 8vw, 120px) 32px;
+}
+.viewer_frame { display: flex; flex-direction: column; align-items: center; gap: 18px; max-height: 100%; }
+.viewer_img img { display: block; width: auto; height: auto; max-width: min(100%, 1100px); max-height: calc(100svh - 220px); object-fit: contain; }
+.viewer_info { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
+.viewer_event { font-size: clamp(26px, 3vw, 40px); }
+.viewer_count, .viewer_meta {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  color: var(--dim);
+}
+.viewer_nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 8px;
+  color: var(--dim);
+  transition: color 0.2s, transform 0.2s;
+}
+.viewer_nav:hover { color: var(--white); }
+.viewer_nav--prev:hover { transform: translateX(-3px); }
+.viewer_nav--next:hover { transform: translateX(3px); }
+.viewer_nav--prev { left: clamp(10px, 2vw, 32px); }
+.viewer_nav--next { right: clamp(10px, 2vw, 32px); }
+
 /* ───────────── Sounds ───────────── */
 .sounds { padding: clamp(60px, 8vw, 120px) 0; }
 
@@ -476,7 +523,15 @@ section { position: relative; }
 }
 .player_frame { position: relative; width: min(100%, 1100px); aspect-ratio: 16/9; background: #000; }
 .player_frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.player_close { position: absolute; top: 20px; right: var(--gutter); font-weight: 600; font-size: 15px; }
+.player_close {
+  position: absolute;
+  top: 16px;
+  right: var(--gutter);
+  padding: 8px;
+  color: var(--dim);
+  transition: color 0.2s, transform 0.3s;
+}
+.player_close:hover { color: var(--white); transform: rotate(90deg); }
 
 /* ───────────── Footer (sunrise) ───────────── */
 .footer {
@@ -511,7 +566,9 @@ section { position: relative; }
 }
 .footer_fields input:focus { border-color: var(--white); }
 .footer_fields input::placeholder { color: var(--dim); }
-.footer_error { font-size: 14px; margin-top: 10px; }
+.footer_error { font-size: 14px; margin-top: 12px; }
+.footer_error a { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.footer_error a:hover { color: var(--accent-soft); }
 .footer_links { display: flex; flex-direction: column; gap: 10px; font-family: var(--font-mono), monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
 .footer_links a:hover { color: var(--accent-soft); }
 .footer_socials { list-style: none; display: flex; gap: 10px; }
@@ -675,4 +732,9 @@ section { position: relative; }
 @media (prefers-reduced-motion: reduce) {
   .about_word { opacity: 1; }
   .grain, .marquee_track, .hero_slide.is-active img { animation: none; }
+}
+
+@media (max-width: 520px) {
+  .viewer { padding: 56px 12px 96px; }
+  .viewer_nav { top: auto; bottom: 24px; margin-top: 0; }
 }

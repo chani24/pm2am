@@ -23,6 +23,11 @@
       "src": "/media/hero/03-disco-ball-crowd.jpg",
       "width": 1080,
       "height": 720
+    },
+    {
+      "src": "/media/hero/04-pyramid-lights-crowd.jpg",
+      "width": 854,
+      "height": 1280
     }
   ],
   "gallery": [
@@ -39,9 +44,21 @@
       "event": "All White with DJ Rosco"
     },
     {
+      "src": "/media/gallery/all-white-with-dj-rosco/all-white-dancing-in-white.jpg",
+      "width": 1024,
+      "height": 1536,
+      "event": "All White with DJ Rosco"
+    },
+    {
       "src": "/media/gallery/all-white-with-dj-rosco/all-white-dj-booth.jpg",
       "width": 1080,
       "height": 1620,
+      "event": "All White with DJ Rosco"
+    },
+    {
+      "src": "/media/gallery/all-white-with-dj-rosco/all-white-dj-rosco-on-decks.jpg",
+      "width": 1024,
+      "height": 1280,
       "event": "All White with DJ Rosco"
     },
     {
@@ -51,22 +68,40 @@
       "event": "All White with DJ Rosco"
     },
     {
-      "src": "/media/gallery/beach-carnival/beach-carnival-three-friends.jpg",
-      "width": 1600,
-      "height": 1087,
-      "event": "Beach Carnival"
+      "src": "/media/gallery/all-white-with-dj-rosco/all-white-smiling-white-dress.jpg",
+      "width": 1024,
+      "height": 1536,
+      "event": "All White with DJ Rosco"
     },
     {
-      "src": "/media/gallery/beach-carnival/beach-carnival-two-friends.jpg",
-      "width": 640,
-      "height": 800,
-      "event": "Beach Carnival"
-    },
-    {
-      "src": "/media/gallery/hot-body-summer/hot-body-dancers.jpg",
+      "src": "/media/gallery/beach-carnival-ii/aro-beach-carnival-crowd-dancing.jpg",
       "width": 2400,
-      "height": 1351,
-      "event": "Hot Body Summer"
+      "height": 1920,
+      "event": "Beach Carnival II"
+    },
+    {
+      "src": "/media/gallery/beach-carnival-ii/aro-beach-carnival-crowd-green-lights.jpg",
+      "width": 2400,
+      "height": 1600,
+      "event": "Beach Carnival II"
+    },
+    {
+      "src": "/media/gallery/beach-carnival-ii/aro-beach-carnival-green-neon-portrait.jpg",
+      "width": 1920,
+      "height": 2400,
+      "event": "Beach Carnival II"
+    },
+    {
+      "src": "/media/gallery/beach-carnival-ii/aro-beach-carnival-packed-crowd.jpg",
+      "width": 2400,
+      "height": 1600,
+      "event": "Beach Carnival II"
+    },
+    {
+      "src": "/media/gallery/beach-carnival-ii/aro-beach-carnival-selector-smiling.jpg",
+      "width": 1920,
+      "height": 2400,
+      "event": "Beach Carnival II"
     },
     {
       "src": "/media/gallery/hot-body-summer/hot-body-dancing-crowd.jpg",
@@ -81,10 +116,52 @@
       "event": "Hot Body Summer"
     },
     {
-      "src": "/media/gallery/hot-body-summer/hot-body-poolside-friends.jpg",
+      "src": "/media/gallery/hot-body-summer/hot-body-hot-girls-love-pm2am-sign.jpg",
+      "width": 854,
+      "height": 1280,
+      "event": "Hot Body Summer"
+    },
+    {
+      "src": "/media/gallery/hot-body-summer/hot-body-poolside-bikinis.jpg",
+      "width": 854,
+      "height": 1280,
+      "event": "Hot Body Summer"
+    },
+    {
+      "src": "/media/gallery/no-love-in-lagos/aro-no-love-dj-booth-crew.jpg",
+      "width": 1920,
+      "height": 2400,
+      "event": "No Love in Lagos"
+    },
+    {
+      "src": "/media/gallery/no-love-in-lagos/aro-no-love-gold-fan.jpg",
       "width": 1600,
       "height": 2400,
-      "event": "Hot Body Summer"
+      "event": "No Love in Lagos"
+    },
+    {
+      "src": "/media/gallery/no-love-in-lagos/aro-no-love-laughing-braids.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "No Love in Lagos"
+    },
+    {
+      "src": "/media/gallery/pm2am-anniversary/anniversary-dj-on-decks.jpg",
+      "width": 1733,
+      "height": 2166,
+      "event": "PM2AM Anniversary"
+    },
+    {
+      "src": "/media/gallery/pm2am-anniversary/anniversary-masked-mc-red-jacket.jpg",
+      "width": 1920,
+      "height": 2400,
+      "event": "PM2AM Anniversary"
+    },
+    {
+      "src": "/media/gallery/pm2am-anniversary/anniversary-selfie-crowd.jpg",
+      "width": 1920,
+      "height": 2400,
+      "event": "PM2AM Anniversary"
     },
     {
       "src": "/media/gallery/pm2am-with-smallzthedj/smalls-crowd-purple-lights.jpg",
@@ -96,6 +173,18 @@
       "src": "/media/gallery/pm2am-with-smallzthedj/smalls-dancing-arm-up.jpg",
       "width": 1800,
       "height": 2400,
+      "event": "PM2AM with SmallztheDJ"
+    },
+    {
+      "src": "/media/gallery/pm2am-with-smallzthedj/smalls-hype-man-palm-shirt.jpg",
+      "width": 854,
+      "height": 1280,
+      "event": "PM2AM with SmallztheDJ"
+    },
+    {
+      "src": "/media/gallery/pm2am-with-smallzthedj/smalls-red-top-dancing.jpg",
+      "width": 854,
+      "height": 1280,
       "event": "PM2AM with SmallztheDJ"
     },
     {
@@ -111,7 +200,37 @@
       "event": "Vice City"
     },
     {
+      "src": "/media/gallery/vice-city/vice-city-dj-booth-crowd.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "Vice City"
+    },
+    {
       "src": "/media/gallery/vice-city/vice-city-dj-hands-up.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "Vice City"
+    },
+    {
+      "src": "/media/gallery/vice-city/vice-city-gold-wall-pose.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "Vice City"
+    },
+    {
+      "src": "/media/gallery/vice-city/vice-city-red-top-peace-sign.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "Vice City"
+    },
+    {
+      "src": "/media/gallery/vice-city/vice-city-red-wall-dancing.jpg",
+      "width": 1600,
+      "height": 2400,
+      "event": "Vice City"
+    },
+    {
+      "src": "/media/gallery/vice-city/vice-city-striped-shirt-dancing.jpg",
       "width": 1600,
       "height": 2400,
       "event": "Vice City"

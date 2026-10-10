@@ -22,10 +22,10 @@ export default function Hero({ upcoming }: { upcoming: PartyEvent[] }) {
         </h1>
 
         <div className="hero_ctas">
-          <a href="#events" className="btn btn--solid btn--lg">
+          <a href="#events" className="btn btn--solid">
             Buy Tickets
           </a>
-          <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost btn--lg">
+          <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
             Book a Table
           </a>
         </div>

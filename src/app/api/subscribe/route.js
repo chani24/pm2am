@@ -23,7 +23,7 @@ export async function POST(req) {
       .update(email.toLowerCase())
       .digest("hex");
 
-    const response = await mailchimp.lists.setListMember(
+    await mailchimp.lists.setListMember(
       listId,
       subscriberHash,
       {
@@ -39,9 +39,8 @@ export async function POST(req) {
     // Optional single tag
     const tagList = typeof tag === "string" && tag.trim() ? [tag.trim()] : [];
 
-    let tagsResult = null;
     if (tagList.length > 0) {
-      tagsResult = await mailchimp.lists.updateListMemberTags(
+      await mailchimp.lists.updateListMemberTags(
         listId,
         subscriberHash,
         {
@@ -53,9 +52,7 @@ export async function POST(req) {
     return new Response(
       JSON.stringify({
         message: "Subscription successful",
-        response,
         tagsApplied: tagList,
-        tagsResult,
       }),
       {
         status: 200,
@@ -63,8 +60,9 @@ export async function POST(req) {
       }
     );
   } catch (error) {
+    console.error("Mailchimp subscribe failed:", error?.status, error?.response?.body?.title ?? error?.message);
     return new Response(
-      JSON.stringify({ message: "Subscription failed", error }),
+      JSON.stringify({ message: "Subscription failed" }),
       {
         status: 500,
         headers: { "Content-Type": "application/json" },
