@@ -8,7 +8,8 @@ import media from "./media.json";
 
 export const links = {
   tables: "https://wa.link/2iibxc",
-  community: "https://chat.whatsapp.com/GzJaIv9HJUE5KHhuQKcnKf?s=cl&p=i&ilr=0&amv=2",
+  community:
+    "https://chat.whatsapp.com/GzJaIv9HJUE5KHhuQKcnKf?s=cl&p=i&ilr=0&amv=2",
   shop: "https://pm2amstore.bumpa.shop",
   youtube: "https://www.youtube.com/@Pm2amgang",
   instagram: "https://www.instagram.com/pm.2am/",
@@ -69,7 +70,8 @@ export const events: PartyEvent[] = [
     timeLabel: "9PM – 5AM",
     venue: "Casa 45",
     city: "Lagos",
-    ticketLink: "https://tix.africa/discover/pm2amhalloween",
+    ticketLink:
+      "https://myaccessplug.com/checkout/pm2am-after-dark?tier=cmveu96w000363j35xe6cs1vs",
     image: "/halloween-flyer.png",
     flyer: "/halloween-flyer.png",
     intro:
@@ -93,8 +95,9 @@ export const events: PartyEvent[] = [
     timeLabel: "7PM – 6AM",
     venue: "Voda Beach Club",
     city: "Lagos",
-    ticketLink: "https://tix.africa/discover/pm2am-x-afrofete-tropicana",
+    ticketLink: "https://chowdeck.rsvp/pm2am-x-afrofete-tropicana1792398810367",
     image: "/media/gallery/hot-body-summer/hot-body-poolside-bikinis.jpg",
+    flyer: "/tropicana.png",
     intro:
       "This December, AfroFête and PM2AM come together for TROPICANA: HOMECOMING — a one-night celebration of music, culture and the energy of Lagos.",
     body: [
@@ -340,24 +343,42 @@ export const recapPreviewCount = 12;
 
 const ranked = media.gallery
   .map((g) => {
-    const file = g.src.split("/").pop()!.replace(/\.jpg$/, "");
+    const file = g.src
+      .split("/")
+      .pop()!
+      .replace(/\.jpg$/, "");
     const event = g.event || "PM2AM";
     const info = recapEvents.find((e) => e.name === event);
-    const credit = Object.entries(credits).find(([prefix]) => file.startsWith(prefix))?.[1];
+    const credit = Object.entries(credits).find(([prefix]) =>
+      file.startsWith(prefix),
+    )?.[1];
     const recency = recapEvents.findIndex((e) => e.name === event);
     const pinned = pinnedShots.includes(file);
     return {
-      shot: { src: g.src, width: g.width, height: g.height, event, date: info?.date, venue: info?.venue, credit, pinned },
+      shot: {
+        src: g.src,
+        width: g.width,
+        height: g.height,
+        event,
+        date: info?.date,
+        venue: info?.venue,
+        credit,
+        pinned,
+      },
       dancing: dancingShots.has(file),
       recency: recency === -1 ? Infinity : recency,
     };
   })
   // Within any tier: newer night first, dancing before not.
-  .sort((a, b) => a.recency - b.recency || Number(b.dancing) - Number(a.dancing));
+  .sort(
+    (a, b) => a.recency - b.recency || Number(b.dancing) - Number(a.dancing),
+  );
 
 const pins = ranked.filter((r) => r.shot.pinned);
 const latest = [
-  ...ranked.filter((r) => r.recency === 0 && !r.shot.pinned).slice(0, Math.max(0, latestNightLead - pins.length)),
+  ...ranked
+    .filter((r) => r.recency === 0 && !r.shot.pinned)
+    .slice(0, Math.max(0, latestNightLead - pins.length)),
   ...pins,
 ];
 const others = ranked.filter((r) => !latest.includes(r));
