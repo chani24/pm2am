@@ -5,7 +5,13 @@ import { useEffect, useState } from "react";
 import { links } from "@/config/site";
 
 // Mobile-only bar that appears once the hero's own buttons scroll away.
-export default function StickyCta({ ticketHref = "/#events" }: { ticketHref?: string }) {
+export default function StickyCta({
+  ticketHref = "/#events",
+  tables = true,
+}: {
+  ticketHref?: string;
+  tables?: boolean;
+}) {
   const [show, setShow] = useState(false);
   useEffect(() => {
     const onScroll = () => {
@@ -28,9 +34,11 @@ export default function StickyCta({ ticketHref = "/#events" }: { ticketHref?: st
           Tickets
         </Link>
       )}
-      <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
-        Tables
-      </a>
+      {tables && (
+        <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
+          Tables
+        </a>
+      )}
     </div>
   );
 }

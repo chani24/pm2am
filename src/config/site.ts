@@ -34,6 +34,8 @@ export const socials = [
 export type PartyEvent = {
   slug: string;
   name: string;
+  /** Screenings drop the table-booking buttons and don't lead the "Buy tickets" link. Defaults to party. */
+  kind?: "party" | "screening";
   /** Collab partner shown as "PM2AM x ___". */
   collab?: string;
   /** Name as displayed; the *starred* word is set in the graffiti face. */
@@ -82,6 +84,55 @@ export const events: PartyEvent[] = [
     ],
     signoff:
       "When the lights go down, PM2AM comes alive. Welcome to After Dark.",
+  },
+  {
+    slug: "avengers-doomsday-screening",
+    name: "Avengers: Doomsday",
+    kind: "screening",
+    collab: "Filmhouse",
+    styledName: "Avengers: *Doomsday*",
+    tagline: "Advanced screening",
+    startsAt: "2026-12-17T14:30:00+01:00",
+    endsAt: "2026-12-17T17:00:00+01:00",
+    dateLabel: "17.12",
+    dayLabel: "Thu 17 Dec",
+    timeLabel: "2:30PM – 5PM",
+    venue: "Landmark Filmhouse",
+    city: "Lagos",
+    ticketLink:
+      "https://myaccessplug.com/events/pm2am-x-filmhouse-aveneger-doomsday-exclusive-screening",
+    image: "/filmhouse-avengers-doomsday.jpg",
+    flyer: "/filmhouse-avengers-doomsday.jpg",
+    intro:
+      "PM2AM and Filmhouse are taking over Landmark for an exclusive advanced screening of Avengers: Doomsday.",
+    body: [
+      "On Thursday 17 December, catch Marvel Studios’ Avengers: Doomsday ahead of its release, in a cinema full of the PM2AM gang.",
+    ],
+    signoff: "Doomsday comes early.",
+  },
+  {
+    slug: "dune-part-three-imax-screening",
+    name: "Dune: Part Three",
+    kind: "screening",
+    collab: "Filmhouse",
+    styledName: "*Dune*: Part Three",
+    tagline: "Advanced screening in IMAX",
+    startsAt: "2026-12-17T20:00:00+01:00",
+    endsAt: "2026-12-17T22:30:00+01:00",
+    dateLabel: "17.12",
+    dayLabel: "Thu 17 Dec",
+    timeLabel: "8PM – 10:30PM",
+    venue: "Filmhouse IMAX Lekki",
+    city: "Lagos",
+    ticketLink: "https://popouttickets.com/events/pm2amxfilmhouse",
+    image: "/filmhouse-dune-part-three.jpg",
+    flyer: "/filmhouse-dune-part-three.jpg",
+    intro:
+      "PM2AM and Filmhouse are taking over IMAX Lekki for an exclusive advanced screening of Dune: Part Three.",
+    body: [
+      "On Thursday 17 December, see Dune: Part Three on the IMAX screen at Filmhouse Lekki ahead of its release, with the PM2AM gang.",
+    ],
+    signoff: "See it big. See it first.",
   },
   {
     slug: "tropicana",

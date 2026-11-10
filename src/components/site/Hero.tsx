@@ -6,7 +6,7 @@ export default function Hero({ upcoming }: { upcoming: PartyEvent[] }) {
   const dates = upcoming.map((e) => `${e.name} ${e.dateLabel}`);
   const scene = [
     "Detty December",
-    ...upcoming.filter((e) => e.collab).map((e) => `PM2AM x ${e.collab}`),
+    ...Array.from(new Set(upcoming.filter((e) => e.collab).map((e) => `PM2AM x ${e.collab}`))),
     ...Array.from(new Set(upcoming.map((e) => e.venue))),
   ];
 

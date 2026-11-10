@@ -19,6 +19,8 @@ export default function Events({ events }: { events: PartyEvent[] }) {
   };
 
   if (events.length === 0) return null;
+  // The section's "Buy tickets" goes to the next party, not a one-off screening.
+  const next = events.find((e) => e.kind !== "screening") ?? events[0];
 
   return (
     <section className="events" id="events">
@@ -26,7 +28,7 @@ export default function Events({ events }: { events: PartyEvent[] }) {
         <SectionHead
           title="Upcoming"
           aside={
-            <a href={events[0].ticketLink} target="_blank" rel="noopener noreferrer" className="link-arrow">
+            <a href={next.ticketLink} target="_blank" rel="noopener noreferrer" className="link-arrow">
               Buy tickets →
             </a>
           }

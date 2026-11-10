@@ -66,7 +66,9 @@ export default async function EventPage({ params }: Params) {
             </dl>
             <div className="hero_ctas">
               <a href={event.ticketLink} target="_blank" rel="noopener noreferrer" className="btn btn--solid">Buy Tickets</a>
-              <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">Book a Table</a>
+              {event.kind !== "screening" && (
+                <a href={links.tables} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">Book a Table</a>
+              )}
             </div>
           </div>
         </section>
@@ -116,7 +118,7 @@ export default async function EventPage({ params }: Params) {
         )}
       </main>
       <Footer />
-      <StickyCta ticketHref={event.ticketLink} />
+      <StickyCta ticketHref={event.ticketLink} tables={event.kind !== "screening"} />
     </>
   );
 }
