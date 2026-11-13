@@ -147,7 +147,7 @@ export const events: PartyEvent[] = [
     venue: "Voda Beach Club",
     city: "Lagos",
     ticketLink: "https://chowdeck.rsvp/pm2am-x-afrofete-tropicana1792398810367",
-    image: "/media/gallery/hot-body-summer/hot-body-poolside-bikinis.jpg",
+    image: "/tropicana.png",
     flyer: "/tropicana.png",
     intro:
       "This December, AfroFête and PM2AM come together for TROPICANA: HOMECOMING — a one-night celebration of music, culture and the energy of Lagos.",
@@ -176,13 +176,13 @@ export const events: PartyEvent[] = [
     endsAt: "2026-12-24T05:00:00+01:00",
     dateLabel: "23.12",
     dayLabel: "Wed 23 Dec",
-    timeLabel: "8PM – 5AM",
+    timeLabel: "10PM – 5AM",
     venue: "Casa 45",
     city: "Lagos",
     ticketLink:
       "https://tix.africa/discover/pm2am-x-afroverified-sweet-n-reckless",
-    image:
-      "/media/gallery/all-white-with-dj-rosco/all-white-crowd-green-light.jpg",
+    image: "/sweetxreckless.jpeg",
+    flyer: "/sweetxreckless.jpeg",
     intro: "Two cities. Two cultures. One reckless night.",
     body: [
       "This December, PM2AM links up with Toronto-based AfroVerified for SWEET N RECKLESS — an international nightlife collaboration bringing the energy of the diaspora straight into the heart of Lagos.",
@@ -192,7 +192,7 @@ export const events: PartyEvent[] = [
   },
   {
     slug: "the-finale",
-    name: "The Finale",
+    name: "The Last Dance",
     tagline: "One last *dance*",
     startsAt: "2026-12-27T20:00:00+01:00",
     endsAt: "2026-12-28T05:00:00+01:00",
@@ -202,14 +202,15 @@ export const events: PartyEvent[] = [
     venue: "Casa 45",
     city: "Lagos",
     ticketLink: "https://tix.africa/discover/pm2am-the-finale",
-    image: "/media/hero/01-stage-lights-crowd.jpg",
-    intro: "One last dance. One final shutdown.",
+    image: "/last-dance.png",
+    flyer: "/last-dance.png",
+    intro: "One last dance to close out December.",
     body: [
-      "December has been a movie. Now it’s time for the final scene.",
-      "This December 27th, PM2AM presents THE FINALE at Casa 45 — one last night to bring the energy, the people and the madness of Detty December together.",
-      "Expect a packed house, some of your favourite DJs, nonstop energy and a SURPRISE HEADLINER taking over the night. Who? We’re not telling you yet.",
+      "December has been a movie. Now it’s time for the last dance.",
+      "On December 27th, PM2AM presents THE LAST DANCE at Casa 45 — one final night to bring the energy, the people and the madness of Detty December together.",
+      "Expect a packed house, some of your favourite DJs and nonstop energy as we close out the year together.",
     ],
-    signoff: "Just know you’ll want to be there when the lights go down.",
+    signoff: "One last dance. See you on the floor.",
   },
 ];
 
