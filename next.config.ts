@@ -20,6 +20,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      // The Last Dance was first listed as "The Finale"; keep old shared links working.
+      { source: "/events/the-finale", destination: "/events/the-last-dance", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

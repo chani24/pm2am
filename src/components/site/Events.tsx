@@ -2,14 +2,28 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
-import type { PartyEvent } from "@/config/site";
+import { useEffect, useRef, useState } from "react";
+import type { PartyEvent, RoadMap } from "@/config/site";
 import SectionHead from "./SectionHead";
 import Tagline from "./Tagline";
+import { lockScroll } from "./SmoothScroll";
+import { CloseIcon } from "./Icons";
 
-export default function Events({ events }: { events: PartyEvent[] }) {
+export default function Events({ events, roadMap }: { events: PartyEvent[]; roadMap?: RoadMap }) {
   const [active, setActive] = useState<number | null>(null);
+  const [mapOpen, setMapOpen] = useState(false);
   const preview = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!mapOpen) return;
+    lockScroll(true);
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMapOpen(false);
+    window.addEventListener("keydown", onKey);
+    return () => {
+      lockScroll(false);
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [mapOpen]);
 
   // Desktop: the hovered night's flyer (or mood photo) trails the cursor.
   const onMove = (e: React.MouseEvent) => {
@@ -28,9 +42,16 @@ export default function Events({ events }: { events: PartyEvent[] }) {
         <SectionHead
           title="Upcoming"
           aside={
-            <a href={next.ticketLink} target="_blank" rel="noopener noreferrer" className="link-arrow">
-              Buy tickets →
-            </a>
+            <>
+              {roadMap && (
+                <button type="button" className="link-arrow" onClick={() => setMapOpen(true)}>
+                  {roadMap.label}
+                </button>
+              )}
+              <a href={next.ticketLink} target="_blank" rel="noopener noreferrer" className="link-arrow">
+                Buy tickets →
+              </a>
+            </>
           }
         />
 
@@ -75,6 +96,26 @@ export default function Events({ events }: { events: PartyEvent[] }) {
           </div>
         ))}
       </div>
+
+      {roadMap && mapOpen && (
+        <div className="viewer" role="dialog" aria-label={roadMap.label} onClick={() => setMapOpen(false)}>
+          <figure className="viewer_frame" onClick={(e) => e.stopPropagation()}>
+            <div className="viewer_img">
+              <Image
+                src={roadMap.src}
+                alt={roadMap.alt}
+                width={roadMap.width}
+                height={roadMap.height}
+                sizes="(max-width: 900px) 100vw, 60vw"
+                priority
+              />
+            </div>
+          </figure>
+          <button className="player_close" onClick={() => setMapOpen(false)} aria-label="Close">
+            <CloseIcon />
+          </button>
+        </div>
+      )}
     </section>
   );
 }

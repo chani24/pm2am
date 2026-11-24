@@ -172,7 +172,7 @@ export const events: PartyEvent[] = [
     name: "Sweet N Reckless",
     collab: "AfroVerified",
     tagline: "Toronto meets *Lagos*",
-    startsAt: "2026-12-23T20:00:00+01:00",
+    startsAt: "2026-12-23T22:00:00+01:00",
     endsAt: "2026-12-24T05:00:00+01:00",
     dateLabel: "23.12",
     dayLabel: "Wed 23 Dec",
@@ -191,28 +191,39 @@ export const events: PartyEvent[] = [
     ],
   },
   {
-    slug: "the-finale",
+    slug: "the-last-dance",
     name: "The Last Dance",
     tagline: "One last *dance*",
-    startsAt: "2026-12-27T20:00:00+01:00",
-    endsAt: "2026-12-28T05:00:00+01:00",
-    dateLabel: "27.12",
-    dayLabel: "Sun 27 Dec",
-    timeLabel: "8PM – 5AM",
+    startsAt: "2026-12-28T21:00:00+01:00",
+    endsAt: "2026-12-29T05:00:00+01:00",
+    dateLabel: "28.12",
+    dayLabel: "Mon 28 Dec",
+    timeLabel: "9PM – 5AM",
     venue: "Casa 45",
     city: "Lagos",
     ticketLink: "https://tix.africa/discover/pm2am-the-finale",
-    image: "/last-dance.png",
-    flyer: "/last-dance.png",
+    image: "/last-dance.jpg",
+    flyer: "/last-dance.jpg",
     intro: "One last dance to close out December.",
     body: [
       "December has been a movie. Now it’s time for the last dance.",
-      "On December 27th, PM2AM presents THE LAST DANCE at Casa 45 — one final night to bring the energy, the people and the madness of Detty December together.",
+      "On December 28th, PM2AM presents THE LAST DANCE at Casa 45 — one final night to bring the energy, the people and the madness of Detty December together.",
       "Expect a packed house, some of your favourite DJs and nonstop energy as we close out the year together.",
     ],
     signoff: "One last dance. See you on the floor.",
   },
 ];
+
+// Season graphic opened from the Upcoming header; hidden once `showUntil` passes.
+export const roadMap = {
+  src: "/detty-december-road-map.jpg",
+  width: 1500,
+  height: 2000,
+  label: "December road map",
+  alt: "PM2AM Detty December road map: Avengers: Doomsday and Dune: Part Three screenings on 17 Dec, Tropicana on 19 Dec, Sweet & Reckless on 23 Dec, The Last Dance on 28 Dec",
+  showUntil: "2026-12-29T05:00:00+01:00",
+};
+export type RoadMap = typeof roadMap;
 
 export function eventTitle(e: PartyEvent) {
   return e.collab ? `PM2AM x ${e.collab}: ${e.name}` : `PM2AM: ${e.name}`;

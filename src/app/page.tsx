@@ -7,20 +7,21 @@ import PastEvents from "@/components/site/PastEvents";
 import Sounds from "@/components/site/Sounds";
 import Footer from "@/components/site/Footer";
 import StickyCta from "@/components/site/StickyCta";
-import { upcomingEvents } from "@/config/site";
+import { roadMap, upcomingEvents } from "@/config/site";
 
 // Re-render hourly so finished events drop off "Upcoming" on their own.
 export const revalidate = 3600;
 
 export default function Home() {
   const upcoming = upcomingEvents();
+  const showRoadMap = Date.parse(roadMap.showUntil) > Date.now();
   return (
     <>
       <Nav />
       <main>
         <Hero upcoming={upcoming} />
         <About />
-        <Events events={upcoming} />
+        <Events events={upcoming} roadMap={showRoadMap ? roadMap : undefined} />
         <Shop />
         <PastEvents />
         <Sounds />

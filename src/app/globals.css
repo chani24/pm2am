@@ -137,6 +137,7 @@ html.menu-lock body { overflow: hidden; }
   transition: color 0.2s;
 }
 .link-arrow:hover { color: var(--white); }
+button.link-arrow { background: none; border: 0; padding: 0; cursor: pointer; line-height: inherit; }
 
 /* ───────────── Nav ───────────── */
 .nav {
@@ -247,7 +248,7 @@ html.menu-lock body { overflow: hidden; }
 }
 .shead_title { font-size: clamp(32px, 5vw, 76px); }
 .shead_title .tag { font-size: 1.65em; vertical-align: -0.12em; line-height: 0.8; }
-.shead_aside { color: var(--dim); }
+.shead_aside { color: var(--dim); display: flex; flex-wrap: wrap; gap: 8px 28px; }
 
 section { position: relative; }
 
