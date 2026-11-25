@@ -1,30 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Inter, Sedgwick_Ave_Display, Space_Mono } from "next/font/google";
 import SmoothScroll from "@/components/site/SmoothScroll";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-// Footer link style.
-const spaceMono = Space_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  display: "swap",
-  weight: ["400", "700"],
-});
-
-// Graffiti handstyle used for accent words — echoes the drippy logo.
-const graffiti = Sedgwick_Ave_Display({
-  subsets: ["latin"],
-  variable: "--font-graffiti",
-  display: "swap",
-  weight: "400",
-});
 
 const monumentBlack = localFont({
   src: "./fonts/PPMonument/PPMonumentExtended-Black.otf",
@@ -86,8 +63,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sedgwick+Ave+Display&family=Space+Mono:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body suppressHydrationWarning
-        className={`${monument.variable} ${monumentLight.variable} ${monumentBlack.variable} ${inter.variable} ${graffiti.variable} ${spaceMono.variable} antialiased`}
+        className={`${monument.variable} ${monumentLight.variable} ${monumentBlack.variable} antialiased`}
       >
         <SmoothScroll />
         <div className="grain" aria-hidden="true" />

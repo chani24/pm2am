@@ -4,6 +4,9 @@
 
 /* ───────────── Tokens ───────────── */
 :root {
+  --font-inter: "Inter";
+  --font-mono: "Space Mono";
+  --font-graffiti: "Sedgwick Ave Display";
   --sky: rgb(34, 7, 58);
   --ink: #07040b;
   --white: #f6f2fb;
